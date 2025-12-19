@@ -1,0 +1,2088 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+    <title>modetour-cyj</title>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css"></style>
+    <script type="text/javascript" src="script.js"></script>
+
+
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+
+    <!-- 폰트어썸 불러오기 -->
+    <script src="https://kit.fontawesome.com/eafd0a4e2d.js" crossorigin="anonymous"></script>
+
+    <!-- slick 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+
+
+    <!-- aos 불러오기 -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+</head>
+
+
+
+
+</head>
+
+<!-- 헤더 -->
+
+
+<body>
+
+    <script>
+        AOS.init();
+    </script>
+
+
+    <main>
+
+        <header>
+
+            <div class="m-header">
+
+                <a href="index.html" class="logo img-box block">
+                    <img src="image/header-mainlogo.png" alt="logo">
+                </a>
+
+                <a href="#" class="search img-box block">
+
+                    <img src="https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/header_r_icon.svg"
+                        alt="search">
+                    <h5 class="search-text">예약</h5>
+                </a>
+
+                <a href="#" class="contact">Contant Us</a>
+
+                <div class="m-menu-btn">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <p class="m-menu-txt">MENU</p>
+
+
+                <div class="mobile-mask"></div>
+
+
+                <div class="m-menu-list">
+
+
+
+                    <ul>
+
+                        <li class="m-menu-close-btn" onclick="모바일메뉴닫기()"><img
+                                src="https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/close.svg">
+                        </li>
+
+                        <li class="list-icon"><img src="image/header-list-icon01.png">
+                            <a href="login.html">
+                                <p><span>로그인</span>
+                            </a>하고<br>
+                            더 많은 혜택을 확인하세요</p>
+                        </li>
+
+
+                        <li class="delay-1">
+                            <a>PRODUCT</a>
+                        </li>
+                        <li class="delay-2 delay-d">
+                            <a href="booking.html"><span class="list-span">BOOKING</span></a>
+                        </li>
+                        <li class="delay-2">
+                            <a>BOARD</a>
+                        </li>
+                        <li class="delay-2">
+                            <a href="qna.html"><span class="list-span">QNA</span></a>
+                        </li>
+                        <li class="delay-3">
+                            <a href="faq.html"><span class="list-span">FAQ</span></a>
+                        </li>
+                        <li class="delay-4 delay-d">
+                            <a href="event.html"><span class="list-span">EVENT</span></a>
+                        </li>
+
+                        <li class="delay-4">
+                            <a>ACCOUNT</a>
+                        </li>
+                        <li class="delay-5">
+                            <a href="login.html"><span class="list-span">LOGIN</span></a>
+                        </li>
+                        <li class="delay-5">
+                            <a href="joinus.html"><span class="list-span">JOINUS</span></a>
+                        </li>
+                        <li class="delay-5">
+                            <a href="remove.html"><span class="list-span">REMOVE</span></a>
+                        </li>
+
+                    </ul>
+
+
+
+                    <ul class="list-fonticon">
+                        <li><a><i class="fa-regular fa-circle-user"></i></a></li>
+                        <li><a><i class="fa-regular fa-bell"></i></a></li>
+                        <li><a><i class="fa-solid fa-headset"></i></a></li>
+                        <li><a><i class="fa-solid fa-globe"></i></a></li>
+                    </ul>
+
+
+
+                    <ul class="list-b">
+                        <li>
+                            <a></a>
+                        </li>
+                    </ul>
+
+
+                    </ul>
+
+                </div>
+
+
+                <div class="m-search-on">
+
+                    <ul>
+
+                        <li class="m-search-close-btn" onclick="서치메뉴닫기()"><img
+                                src="https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/close.svg">
+                        </li>
+
+                    </ul>
+
+                    <div class="m-search-b"></div>
+
+
+                    <div class="m-search-box">
+
+                        <div>
+                            <h1 class="m-search-maint">Booking</h1>
+                            <img src="https://www.svgrepo.com/show/107293/flight-ticket.svg">
+                        </div>
+
+                        <section>
+                            <h5 id="menuTitle" class="search-sub-t">지역을 선택해주세요.</h5>
+
+                            <div class="menu-accordion scrollY">
+
+                                <div class="menu-accordion-item">
+                                    <div class="menu-accordion-header">유럽</div>
+                                    <div class="menu-accordion-content">
+                                        <div class="submenu-accordion sub-accordion-menu-1">
+
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">프랑스</div>
+
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">스위스</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">이탈리아</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">영국</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">독일</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">영국</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">네덜란드</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">벨기에</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">체코</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">오스트리아</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">헝가리</div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="menu-accordion-item">
+                                    <div class="menu-accordion-header">동남아시아</div>
+                                    <div class="menu-accordion-content">
+
+                                        <div class="submenu-accordion">
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">방콕</div>
+
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">파타야</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">푸켓</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">치앙마이</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">치앙라이</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">카오락</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">다낭</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">나트랑</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">달랏</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">하노이</div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="menu-accordion-item">
+                                    <div class="menu-accordion-header">서남아시아</div>
+                                    <div class="menu-accordion-content">
+                                        <div class="submenu-accordion">
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">인도네시아</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">발리</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">인도</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">네팔</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">몰디브</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="menu-accordion-item">
+                                    <div class="menu-accordion-header">일본</div>
+                                    <div class="menu-accordion-content">
+                                        <div class="submenu-accordion">
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">큐슈</div>
+
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">북해도</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">알펜루트</div>
+
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">오키나와</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">시코쿠/주고쿠</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="menu-accordion-item">
+                                    <div class="menu-accordion-header">중국/홍콩/마카오</div>
+                                    <div class="menu-accordion-content">
+                                        <div class="submenu-accordion">
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">장가계</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">백두산</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">황산</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">상해</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">북경</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">서안</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">하이난</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">홍콩</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">마카오</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <hr>
+
+                        <section class="calendar">
+
+                            <div>
+
+                                <h5 class="search-sub-t">여행 예정일</h5>
+
+                                <button onclick="showPopup()">일정 보기</button>
+
+                            </div>
+
+
+                            <div class="checkInOutInfo" onclick="showPopup()">
+                                <div>
+                                    <p>
+                                        <span>가는 날</span>
+                                        <label id="check_in_day"></label>
+                                    </p>
+                                    <p class="space">~</p>
+                                    <p>
+                                        <span>오는 날</span>
+                                        <label id="check_out_day"></label>
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                    </div>
+
+                    <!-- 캘린더 팝업 -->
+
+                    <section>
+
+                        <div id="popup-container">
+                            <div id="popup-content">
+                                <div id="calendarPopup">
+
+                                    <button id="closeButton" onclick="hidePopup()"><img
+                                            src="https://cdn3.iconfinder.com/data/icons/simple-arrows-essentials/48/v-09-512.png">
+                                        <div class="select-b">날짜선택</div>
+                                    </button>
+
+
+                                    <section>
+
+                                        <div class="calendar-wrap">
+                                            <div class="calendar-middle-wrap">
+                                                <div class="cal_nav">
+                                                    <a href="javascript:;" class="nav-btn go-prev"></a>
+                                                    <span class="year-month start-year-month"></span>
+                                                    <a href="javascript:;" class="nav-btn go-next"></a>
+                                                </div>
+                                                <div class="cal_wrap">
+                                                    <div class="days">
+                                                        <div class="day">일</div>
+                                                        <div class="day">월</div>
+                                                        <div class="day">화</div>
+                                                        <div class="day">수</div>
+                                                        <div class="day">목</div>
+                                                        <div class="day">금</div>
+                                                        <div class="day">토</div>
+                                                    </div>
+                                                    <div class="dates start-calendar"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="calendar-middle-wrap">
+                                                <div class="cal_nav">
+                                                    <a href="javascript:;" class="nav-btn go-prev"></a>
+                                                    <span class="year-month last-year-month"></span>
+                                                    <a href="javascript:;" class="nav-btn go-next"></a>
+                                                </div>
+                                                <div class="cal_wrap">
+                                                    <div class="days">
+                                                        <div class="day">일</div>
+                                                        <div class="day">월</div>
+                                                        <div class="day">화</div>
+                                                        <div class="day">수</div>
+                                                        <div class="day">목</div>
+                                                        <div class="day">금</div>
+                                                        <div class="day">토</div>
+                                                    </div>
+                                                    <div class="dates last-calendar"></div>
+                                                </div>
+                                            </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </section>
+
+
+
+                    <script>
+                        // 초기에 팝업을 숨기는 함수
+                        function hidePopup() {
+                            document.getElementById('popup-container').style.display = 'none';
+                        }
+
+                        // 페이지 로드 시 팝업 숨김
+                        window.addEventListener('DOMContentLoaded', hidePopup);
+
+                        // 팝업 보여주는 함수
+                        function showPopup() {
+                            document.getElementById('popup-container').style.display = 'flex';
+                        }
+
+                        // 팝업을 보여주는 이벤트 처리
+                        document.getElementById('openButton').addEventListener('click', showPopup);
+                    </script>
+
+
+
+                    <script>
+                        // 날짜 포맷 정규식 (yyyy-mm-dd)
+                        const regexDate = RegExp(/^\d{4}-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$/);
+                        // date 객체 만들기
+                        const thisDate = new Date();
+                        // 오늘 날짜 (yyyy-mm-dd 00:00:00)
+                        const today = new Date();
+                        // 달력이도 최대 개월 수
+                        const limitMonth = 4;
+                        // 달력에서 표기하는 날짜 객체
+                        let thisMonth = today;
+                        // 달력에서 표기하는 년
+                        let currentYear = thisMonth.getFullYear();
+                        // 달력에서 표기하는 월
+                        let currentMonth = thisMonth.getMonth();
+                        // 체크인 날짜
+                        let checkInDate = "";
+                        // 체크아웃 날짜
+                        let checkOutDate = "";
+
+                        $(document).ready(function () {
+                            // 달력 만들기
+                            calendarInit(thisMonth);
+
+                            // 이전달로 이동
+                            $('.go-prev').on('click', function () {
+                                const startDate = $('.start-year-month').html().split('.');
+
+                                // 달력이 현재 년 월 보다 같거나 작을경우 뒤로가기 막기
+                                if (getLimitMonthCheck(parseInt(startDate[0]), parseInt(startDate[1])) <= 0) {
+                                    return;
+                                }
+
+                                thisMonth = new Date(currentYear, currentMonth - 1, 1);
+                                calendarInit(thisMonth);
+                            });
+
+                            // 다음달로 이동
+                            $('.go-next').on('click', function () {
+                                const lastDate = $('.last-year-month').html().split('.');
+
+                                // 예약 가능 최대 개월수와 같거나 크다면 다음달 이동 막기
+                                if (getLimitMonthCheck(parseInt(lastDate[0]), parseInt(lastDate[1])) >= limitMonth) {
+                                    alert('최대예약 기간은 ' + limitMonth + '개월 입니다.');
+                                    return;
+                                }
+
+                                let limitYear = today.getFullYear();
+                                if (currentMonth + limitMonth >= 12) {
+                                    limitYear = limitYear + 1
+                                }
+
+                                thisMonth = new Date(currentYear, currentMonth + 1, 1);
+                                calendarInit(thisMonth);
+                            });
+                        });
+
+                        // 달력 그리기
+                        function calendarInit(thisMonth) {
+
+                            // 렌더링을 위한 데이터 정리
+                            currentYear = thisMonth.getFullYear();
+                            currentMonth = thisMonth.getMonth();
+
+                            // 렌더링 html 요소 생성
+                            let start_calendar = '';
+                            let last_calendar = '';
+
+                            makeStartCalendar();
+                            makeLastCalendar();
+
+                            // start_calendar
+                            function makeStartCalendar() {
+                                // 이전 달의 마지막 날 날짜와 요일 구하기
+                                const startDay = new Date(currentYear, currentMonth, 0);
+                                const prevDate = startDay.getDate();
+                                const prevDay = startDay.getDay();
+
+                                // 이번 달의 마지막날 날짜와 요일 구하기
+                                const endDay = new Date(currentYear, currentMonth + 1, 0);
+                                const nextDate = endDay.getDate();
+                                const nextDay = endDay.getDay();
+
+                                // 지난달
+                                for (let i = prevDate - prevDay; i <= prevDate; i++) {
+                                    start_calendar += pervDisableDay(i);
+                                }
+
+                                // 이번달
+                                for (let i = 1; i <= nextDate; i++) {
+                                    // 이번달이 현재 년도와 월이 같을경우
+                                    if (currentYear === today.getFullYear() && currentMonth === today.getMonth()) {
+                                        // 지난 날짜는 disable 처리
+                                        if (i < today.getDate()) {
+                                            start_calendar += pervDisableDay(i)
+                                        } else {
+                                            start_calendar += dailyDay(currentYear, currentMonth, i);
+                                        }
+                                    } else {
+                                        start_calendar += dailyDay(currentYear, currentMonth, i);
+                                    }
+                                }
+
+                                // 다음달 7 일 표시
+                                for (let i = 1; i <= (6 - nextDay); i++) {
+                                    start_calendar += nextDisableDay(i);
+                                }
+
+                                $('.start-calendar').html(start_calendar);
+                                // 월 표기
+                                $('.start-year-month').text(currentYear + '.' + zf((currentMonth + 1)));
+                            }
+
+                            // last_calendar
+                            function makeLastCalendar() {
+                                let tempCurrentYear = currentYear;
+                                let tempCurrentMonth = currentMonth + 1;
+
+                                if (tempCurrentMonth >= 12) {
+                                    tempCurrentYear = parseInt(tempCurrentYear) + 1;
+                                    tempCurrentMonth = 0;
+                                }
+
+                                // 이전 달의 마지막 날 날짜와 요일 구하기
+                                const startDay = new Date(tempCurrentYear, tempCurrentMonth, 0);
+                                const prevDate = startDay.getDate();
+                                const prevDay = startDay.getDay();
+
+                                // 이번 달의 마지막날 날짜와 요일 구하기
+                                const endDay = new Date(tempCurrentYear, tempCurrentMonth + 1, 0);
+                                const nextDate = endDay.getDate();
+                                const nextDay = endDay.getDay();
+
+                                // 지난달
+                                for (let i = prevDate - prevDay; i <= prevDate; i++) {
+                                    last_calendar += pervDisableDay(i);
+                                }
+
+                                // 이번달
+                                for (let i = 1; i <= nextDate; i++) {
+                                    // 이번달이 현재 년도와 월이 같을경우
+                                    if (tempCurrentYear === today.getFullYear() && tempCurrentMonth === today.getMonth()) {
+                                        // 지난 날짜는 disable 처리
+                                        if (i < today.getDate()) {
+                                            last_calendar += pervDisableDay(i)
+                                        } else {
+                                            last_calendar += dailyDay(tempCurrentYear, tempCurrentMonth, i);
+                                        }
+                                    } else {
+                                        last_calendar += dailyDay(tempCurrentYear, tempCurrentMonth, i);
+                                    }
+
+                                }
+
+                                // 다음달 7 일 표시
+                                for (let i = 1; i <= (6 - nextDay); i++) {
+                                    last_calendar += nextDisableDay(i);
+                                }
+
+                                $('.last-calendar').html(last_calendar);
+                                // 월 표기
+                                $('.last-year-month').text(tempCurrentYear + '.' + zf((tempCurrentMonth + 1)));
+                            }
+
+
+                            // 지난달 미리 보기
+                            function pervDisableDay(day) {
+                                return '<div class="day prev disable">' + day + '</div>';
+                            }
+
+                            // 이번달
+                            function dailyDay(currentYear, currentMonth, day) {
+                                const date = currentYear + '' + zf((currentMonth + 1)) + '' + zf(day);
+
+                                if (checkInDate === date) {
+                                    return '<div class="day current checkIn" data-day="' + date + '" onclick="selectDay(this)"><span>' + day + '</span><p class="check_in_out_p"></p><p>' + '</div>';
+                                } else if (checkOutDate === date) {
+                                    return '<div class="day current checkOut" data-day="' + date + '" onclick="selectDay(this)"><span>' + day + '</span><p class="check_in_out_p"></p><p>' + '</div>';
+                                } else {
+                                    return '<div class="day current" data-day="' + date + '" onclick="selectDay(this)"><span>' + day + '</span><p class="check_in_out_p"></p><p>' + '</div>';
+                                }
+                            }
+
+                            // 다음달 미리 보기
+                            function nextDisableDay(day) {
+                                return '<div class="day next disable">' + day + '</div>';
+                            }
+
+                            addClassSelectDay();
+                        }
+
+                        // 체크인 체크아웃 기간 안에 날짜 선택 처리
+                        function addClassSelectDay() {
+                            if (checkInDate !== "" && checkOutDate != "") {
+                                $('.day').each(function () {
+                                    const data_day = $(this).data('day');
+
+                                    if (data_day !== undefined && data_day >= checkInDate && data_day <= checkOutDate) {
+                                        $(this).addClass('selectDay');
+                                    }
+                                });
+
+                            }
+                        }
+
+                        // 달력 날짜 클릭
+                        function selectDay(obj) {
+                            if (checkInDate === "") {
+                                $(obj).addClass('checkIn');
+
+
+                                checkInDate = $(obj).data('day');
+
+                                $('#check_in_day').html(getCheckIndateHtml());
+
+                                lastCheckInDate();
+                            } else {
+                                // 체크인 날짜를 한번더 클릭했을때 아무 동작 하지 않기
+                                if (parseInt(checkInDate) === $(obj).data('day')) {
+                                    return;
+                                }
+
+                                // 체크인 날짜보다 체크아웃 날짜를 더 앞으로 찍었을경우 체크인 날짜와 체크아웃 날짜를 바꿔준다
+                                if (checkOutDate === "" && parseInt(checkInDate) > $(obj).data('day')) {
+                                    $('.checkIn').find('.check_in_out_p').html('');
+                                    $('.day').removeClass('checkIn');
+                                    $('#check_in_day').html("");
+
+                                    checkOutDate = checkInDate
+                                    checkInDate = $(obj).data('day');
+
+                                    $(obj).addClass('checkIn');
+                                    $('.checkIn').find('.check_in_out_p').html('출발일');
+
+                                    $('.day[data-day="' + checkOutDate + '"]').addClass('checkOut');
+
+                                    $('#check_in_day').html(getCheckIndateHtml());
+                                    $('#check_out_day').html(getCheckOutdateHtml());
+
+                                    addClassSelectDay();
+
+                                    return;
+                                }
+
+                                // 체크아웃
+                                if (checkOutDate === "") {
+                                    $(obj).addClass('checkOut');
+
+                                    checkOutDate = $(obj).data('day');
+
+                                    $('#check_out_day').html(getCheckOutdateHtml());
+
+                                    addClassSelectDay();
+                                } else {
+                                    // 체크아웃을 날짜 까지 지정했지만 체크인 날짜를 변경할 경우
+                                    if (confirm('출발 날짜를 변경 하시겠습니까?')) {
+                                        $('.checkIn').find('.check_in_out_p').html('');
+                                        $('.checkOut').find('.check_in_out_p').html('');
+
+                                        $('.day').removeClass('checkIn');
+                                        $('.day').removeClass('checkOut');
+                                        $('.day').removeClass('selectDay');
+
+                                        $(obj).addClass('checkIn');
+
+
+                                        checkInDate = $(obj).data('day');
+                                        checkOutDate = "";
+
+                                        $('#check_in_day').html(getCheckIndateHtml());
+                                        $('#check_out_day').html("");
+
+                                        lastCheckInDate();
+                                    }
+                                }
+                            }
+                        }
+
+                        // 체크인 날짜 표기
+                        function getCheckIndateHtml() {
+                            checkInDate = checkInDate.toString();
+                            return checkInDate.substring('0', '4') + "-" + checkInDate.substring('4', '6') + "-" + checkInDate.substring('6', '8') + " ( " + strWeekDay(weekday(checkInDate)) + " )";
+                        }
+
+                        // 체크아웃 날짜 표기
+                        function getCheckOutdateHtml() {
+                            checkOutDate = checkOutDate.toString();
+                            return checkOutDate.substring('0', '4') + "-" + checkOutDate.substring('4', '6') + "-" + checkOutDate.substring('6', '8') + " ( " + strWeekDay(weekday(checkOutDate)) + " )";
+                        }
+
+                        // 체크인 날짜 클릭시 예약 가능한 마지막 날인지 체크 마지막날 일경우 체크아웃 날짜 자동 선택
+                        function lastCheckInDate() {
+                            // 날짜 비교를 위해 시간값을 초기화 하기위해 체크인 날짜 다시 셋팅
+                            let thisCheckDate = new Date(conversion_date(checkInDate, 1));
+                            thisCheckDate = new Date(thisCheckDate.getFullYear(), thisCheckDate.getMonth(), thisCheckDate.getDate());
+
+                            // 예약 가능한 마지막달의 마지막 날짜 셋팅
+                            let thisLastDate = new Date(today.getFullYear(), ((today.getMonth() + 1) + limitMonth), 0);
+
+                            // 체크인 날짜 클릭시 해당일이 예약 가능한 달에 마지막 날짜 일때 체크아웃 강제 표기
+                            if (thisCheckDate.getTime() === thisLastDate.getTime()) {
+                                // 체크인 날짜에 하루 더하기
+                                let thisCheckOutDate = new Date(thisCheckDate.getFullYear(), thisCheckDate.getMonth(), thisCheckDate.getDate());
+                                thisCheckOutDate.setDate(thisCheckOutDate.getDate() + 1);
+                                // YYYYMMDD 형태로 변환
+                                thisCheckOutDate = thisCheckOutDate.getFullYear() + "" + zf((thisCheckOutDate.getMonth() + 1)) + "" + zf(thisCheckOutDate.getDate());
+
+                                checkOutDate = thisCheckOutDate;
+
+                                $($(".day div[data-day='" + checkOutDate + "']")).addClass('checkOut');
+
+                                if ($('.checkOut').find('p').hasClass('holi_day_p')) {
+                                    $('.checkOut').find('.holi_day_p').hide();
+                                }
+
+                                $('#check_out_day').html(getCheckOutdateHtml());
+
+                                addClassSelectDay();
+                            }
+                        }
+
+                        // 최대 개월수 체크
+                        function getLimitMonthCheck(year, month) {
+                            let months = ((today.getFullYear() - year) * 12);
+                            months -= (today.getMonth() + 1);
+                            months += month;
+
+                            return months;
+                        }
+
+                        // 날짜형태 변환
+                        function conversion_date(YYMMDD, choice) {
+                            const yyyy = YYMMDD.substring(0, 4);
+                            const mm = YYMMDD.substring(4, 6);
+                            const dd = YYMMDD.substring(6, 8);
+
+                            return (choice === 1)
+                                ? yyyy + "-" + zf(mm) + "-" + zf(dd)
+                                : yyyy + "." + zf(mm) + "." + zf(dd);
+                        }
+
+                        // 몇요일인지 알려주는 함수 (숫자 형태)
+                        function weekday(YYYYMMDD) {
+                            const weekday_year = YYYYMMDD.substring(0, 4);
+                            const weekday_menth = YYYYMMDD.substring(4, 6);
+                            const weekday_day = YYYYMMDD.substring(6, 9);
+
+                            return new Date(weekday_year + "-" + weekday_menth + "-" + weekday_day).getDay();
+                        }
+
+                        // 요일 리턴
+                        function strWeekDay(weekday) {
+                            switch (weekday) {
+                                case 0: return "일"
+                                    break;
+                                case 1: return "월"
+                                    break;
+                                case 2: return "화"
+                                    break;
+                                case 3: return "수"
+                                    break;
+                                case 4: return "목"
+                                    break;
+                                case 5: return "금"
+                                    break;
+                                case 6: return "토"
+                                    break;
+                            }
+                        }
+
+                        // 숫자 두자리로 만들기
+                        function zf(num) {
+                            num = Number(num).toString();
+
+                            if (Number(num) < 10 && num.length == 1) {
+                                num = "0" + num;
+                            }
+
+                            return num;
+                        }</script>
+
+
+                    </section>
+
+                    <section class="search-search">
+                        <h5 class="search-sub-t">최근검색</h5>
+
+                        <div class="center">
+                            <img class="search-none-icon" src="https://www.modetour.com/icons/icon_alert_30.svg">
+                            <p>최근 검색한 내용이 없습니다.</p>
+                        </div>
+
+                        <a href="booking.html" class="select-b">검색하기</a>
+                    </section>
+
+
+                </div>
+
+
+            </div>
+            </div>
+
+        </header>
+
+
+        <!-- 헤더 -->
+
+        <script>
+
+            window.onload = function () {
+                var link = document.querySelector('.search');
+                var screenWidth = window.innerWidth;
+
+                link.addEventListener('click', function (event) {
+                    if (screenWidth >= 800) {
+                        event.preventDefault();
+                        window.location.href = 'booking.html';
+                    }
+                });
+            };
+
+        </script>
+
+        <!-- 가로 800px이상이면 booking 페이지 실시 -->
+
+        <script>
+            // 모바일 메뉴 버튼
+            $('.m-header > .m-menu-btn').click(function () {
+                if ($(this).hasClass('active')) {
+                    $('html').removeClass('m-menu-scroll');
+
+                    $(this).removeClass('active');
+                    $(this).siblings('.mobile-mask').css('height', '');
+                    $(this).siblings('.m-menu-list').removeClass('active');
+                }
+                else {
+                    $('html').addClass('m-menu-scroll');
+
+                    $('.m-header > .search > img').attr('src', 'https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/header_r_icon.svg');
+                    $('.m-header > .m-search-on').removeClass('active');
+
+                    $(this).siblings('.m-menu-list').find(' > ul > li.active').removeClass('active');
+                    $(this).siblings('.m-menu-list').find(' > ul > li > ul').slideUp(0);
+
+                    $(this).addClass('active');
+                    $(this).siblings('.mobile-mask').css('height', '100%');
+                    $(this).siblings('.m-menu-list').addClass('active');
+                };
+            })
+
+            // 모바일 서치 온
+            $('.m-header > .search').click(function () {
+                if ($(window).innerWidth() <= 800) { // 수정된 부분: 가로 800px 이하에서만 서치 온 기능 활성화
+                    if ($('.m-header > .m-search-on').hasClass('active')) {
+                        $('html').removeClass('m-menu-scroll');
+
+                        $(this).find(' > img').attr('src', 'https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/header_r_icon.svg');
+                        $(this).siblings('.mobile-mask').css('height', '');
+                        $('.m-header > .m-search-on').removeClass('active');
+                    }
+                    else {
+                        $('html').addClass('m-menu-scroll');
+
+                        $('.m-header > .m-menu-btn').removeClass('active');
+                        $(this).siblings('.m-menu-list').removeClass('active');
+
+                        $(this).find(' > img').attr('src', 'https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/header_r_icon.svg');
+                        $(this).siblings('.mobile-mask').css('height', '100%');
+                        $('.m-header > .m-search-on').addClass('active');
+                    }
+                }
+            });
+
+        </script>
+
+
+        <!--헤더 스크롤 이벤트 흰 배경 / 사라지기 -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var header = document.querySelector('.m-header');
+                var searchIcon = document.querySelector('.search img');
+                var menuTxt = document.querySelector('.m-menu-txt');
+                var menuBtnDivs = document.querySelectorAll('.m-menu-btn div');
+                var contactLink = document.querySelector('.contact');
+                var scrollThreshold = 50; // 변경된 스크롤 임계값
+                var hideThreshold = 800; // 숨기기 임계값
+
+                window.addEventListener('scroll', function () {
+                    if (window.scrollY > scrollThreshold) {
+                        header.classList.add('scrolled');
+                        menuTxt.style.color = '#6d6d6d';
+
+                        menuBtnDivs.forEach(function (div) {
+                            div.style.backgroundColor = '#6d6d6d';
+                        });
+
+                        // 창의 가로 크기가 800px 이하일 때만 이미지 색상 변경
+                        if (window.innerWidth <= 800) {
+                            searchIcon.src = 'https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/header_r_icon_on.svg';
+                        } else {
+                            searchIcon.src = 'https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/header_r_icon.svg';
+                        }
+
+                        // 변경된 부분: 스크롤 시 contact 링크 색상 변경
+                        contactLink.style.color = '#6d6d6d';
+                    } else {
+                        header.classList.remove('scrolled');
+                        menuTxt.style.color = 'white';
+                        menuTxt.style.backgroundColor = 'initial';
+
+                        menuBtnDivs.forEach(function (div) {
+                            div.style.backgroundColor = 'white';
+                        });
+
+                        // 창의 가로 크기가 800px 이하일 때만 이미지 색상 변경
+                        if (window.innerWidth <= 800) {
+                            searchIcon.src = 'https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/header_r_icon.svg';
+                        }
+
+                        // 변경된 부분: 스크롤 시 contact 링크 색상 변경
+                        contactLink.style.color = 'white';
+                    }
+
+                    // 추가된 부분: 창의 가로 크기가 800px 이하일 때만 실행
+                    if (window.innerWidth <= 800) {
+                        // 800px 이하에서만 실행되는 코드 추가
+                        var opacityValue = Math.min(1, (hideThreshold - window.scrollY) / hideThreshold);
+                        header.style.opacity = opacityValue;
+
+                        // 800px 이하에서만 실행되는 코드 추가
+                        if (window.scrollY <= hideThreshold) {
+                            header.style.opacity = '1';
+                        }
+                    }
+                });
+            });
+        </script>
+
+
+        <script>// 헤더 모바일메뉴닫기
+            function 모바일메뉴닫기() {
+
+                document.querySelector('.m-menu-btn').classList.remove('active');
+                document.querySelector('.mobile-mask').style.height = '';
+                document.querySelector('.m-menu-list').classList.remove('active');
+
+                document.documentElement.classList.remove('m-menu-scroll');
+            }
+
+        </script>
+
+        <script>
+
+            // 서치메뉴닫기
+            function 서치메뉴닫기() {
+
+                document.querySelector('.m-search-on').classList.remove('active');
+                document.querySelector('.mobile-mask').style.height = '';
+                document.querySelector('.m-menu-btn').classList.remove('active');
+                document.querySelector('.m-menu-list').classList.remove('active');
+
+                document.documentElement.classList.remove('m-menu-scroll');
+            }
+        </script>
+
+
+        <!--서치 - 여행지 선택 -->
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const accordionContainers = document.querySelectorAll('.menu-accordion');
+
+                accordionContainers.forEach(accordionContainer => {
+                    const accordionHeaders = accordionContainer.querySelectorAll('.menu-accordion-header');
+                    const subAccordionHeaders = accordionContainer.querySelectorAll('.submenu-accordion-header');
+                    const additionalContents = accordionContainer.querySelectorAll('.additional-content');
+                    const subAccordionMenu1 = accordionContainer.querySelector('.submenu-accordion.sub-accordion-menu-1');
+                    const menuTitle = document.getElementById('menuTitle');
+
+                    function toggleAccordion(item, content, siblings) {
+                        item.classList.toggle('active');
+                        const isOpen = item.classList.contains('active');
+
+                        content.style.maxHeight = isOpen ? content.scrollHeight + 'px' : 0;
+
+                        if (isOpen) {
+                            siblings.forEach(sibling => {
+                                if (sibling !== item) {
+                                    sibling.classList.remove('active');
+                                    sibling.querySelector('.menu-accordion-content').style.maxHeight = 0;
+                                }
+                            });
+                        }
+                    }
+
+                    accordionHeaders.forEach(header => {
+                        header.addEventListener('click', () => {
+                            const accordionItem = header.parentElement;
+                            const accordionContent = accordionItem.querySelector('.menu-accordion-content');
+                            const otherAccordionItems = Array.from(accordionContainer.querySelectorAll('.menu-accordion-item')).filter(item => item !== accordionItem);
+
+                            toggleAccordion(accordionItem, accordionContent, otherAccordionItems);
+
+                            const otherAccordionContainers = Array.from(document.querySelectorAll('.menu-accordion')).filter(container => container !== accordionContainer);
+                            otherAccordionContainers.forEach(container => {
+                                const otherAccordionItems = Array.from(container.querySelectorAll('.menu-accordion-item'));
+                                otherAccordionItems.forEach(item => {
+                                    item.classList.remove('active');
+                                    item.querySelector('.menu-accordion-content').style.maxHeight = 0;
+                                });
+                            });
+
+                            menuTitle.innerText = header.innerText; // 선택한 헤더 텍스트로 menuTitle 업데이트
+                        });
+                    });
+
+                    subAccordionHeaders.forEach(header => {
+                        header.addEventListener('click', () => {
+                            const subAccordionItem = header.parentElement;
+                            const subAccordionContent = subAccordionItem.querySelector('.submenu-accordion-content');
+                            const otherSubAccordionItems = Array.from(accordionContainer.querySelectorAll('.submenu-accordion-item')).filter(item => item !== subAccordionItem);
+
+                            toggleAccordion(subAccordionItem, subAccordionContent, otherSubAccordionItems);
+
+                            menuTitle.innerText = header.innerText; // 선택한 서브메뉴 헤더 텍스트로 menuTitle 업데이트
+                        });
+                    });
+
+                    additionalContents.forEach(additionalContent => {
+                        additionalContent.addEventListener('click', () => {
+                            toggleAccordion(subAccordionMenu1, subAccordionMenu1, []);
+                        });
+                    });
+                });
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const accordionContainers = document.querySelectorAll('.menu-accordion');
+
+                accordionContainers.forEach(accordionContainer => {
+                    const accordionHeaders = accordionContainer.querySelectorAll('.menu-accordion-header');
+                    const subAccordionHeaders = accordionContainer.querySelectorAll('.submenu-accordion-header');
+                    const menuTitle = document.getElementById('menuTitle');
+
+                    function updateMenuTitle(headerText) {
+                        menuTitle.innerText = headerText;
+                    }
+
+                    accordionHeaders.forEach(header => {
+                        header.addEventListener('click', () => {
+                            const headerText = header.innerText;
+                            updateMenuTitle(headerText);
+                        });
+                    });
+
+                    subAccordionHeaders.forEach(subHeader => {
+                        subHeader.addEventListener('click', () => {
+                            const subHeaderText = subHeader.innerText;
+                            updateMenuTitle(subHeaderText);
+                        });
+                    });
+                });
+            });
+        </script>
+
+
+
+        <!--메인 슬라이드 시작-->
+
+
+        <div class="slide-wrap" data-autoplay="Y">
+
+            <div class="main-visual">
+
+                <div class="slide-item">
+
+                    <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                        <source src="./image/main-slide-maldives.mp4" type="video/mp4">
+                    </video>
+
+                    <div class="item-text">
+                        <h2>푸른 바다와 함께!<br><span class="maldives-text">몰디브 할인특별전</span></h2>
+                        <p>미리 준비할수록 할인이 더 커져요!
+                            <br>~3/20일까지
+                        </p>
+                    </div>
+
+                    <div class="item-gauge">
+                        <span class="gauge-fill"></span>
+                    </div>
+
+                </div>
+
+                <div class="slide-item">
+                    <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                        <source src="./image/main-slide-vietnam.mp4">
+                    </video>
+                    <div class="item-text">
+                        <h2><span class="vietnam-text">안녕! 베트남!</span><br>아시아나항공 4,5월 출발</h2>
+                        <p>단 7회 한정, 100% 출발확정!</p>
+                    </div>
+                    <div class="item-gauge">
+                        <span class="gauge-fill"></span>
+                    </div>
+                </div>
+
+                <div class="slide-item">
+                    <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                        <source src="./image/main-slide-thailand.mp4">
+                    </video>
+                    <div class="item-text">
+                        <h2>모두투어와 함께 떠나는<br><span class="thailand-text">힐링 태국여행</span></h2>
+                        <p>NO팁 NO옵션!<br>
+                            품격있는 태국여행!</p>
+                    </div>
+                    <div class="item-gauge">
+                        <span class="gauge-fill"></span>
+                    </div>
+                </div>
+
+                <div class="slide-item">
+                    <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                        <source src="./image/main-slide-china.mp4">
+                    </video>
+                    <div class="item-text">
+                        <h2>선착순 특가 대방출<br><span class="china-text">모두투어와 중국가자!</span></h2>
+                        <p>오직 모두투어에서만 만날 수 있는
+                            <br>두근두근 중국여행 특가
+                        </p>
+                    </div>
+                    <div class="item-gauge">
+                        <span class="gauge-fill"></span>
+                    </div>
+                </div>
+
+                <div class="slide-item">
+                    <video autoplay loop muted playsinline style="width: 100%; height: 100%; object-fit: cover;">
+                        <source src="./image/main-slide-japan.mp4">
+                    </video>
+                    <div class="item-text">
+                        <h2>조금 더 특별한
+                            <br><span class="japan-text">일본에 갈까요?</span>
+                        </h2>
+                        <p>배부른 힐링,
+                            매일 매일이 새로운 일본</p>
+                    </div>
+                    <div class="item-gauge">
+                        <span class="gauge-fill"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 슬라이드 네비게이션 버튼 -->
+            <div class="slide-nav">
+
+                <button class="custom-prev-button" type="button"><img
+                        src="https://www.mayfield.co.kr/assets/images/slide_arr_green_l.png"></button>
+                <button class="custom-next-button" type="button"><img
+                        src="https://www.mayfield.co.kr/assets/images/slide_arr_green_r.png"></button>
+            </div>
+
+            <button class="autoplay-btn">
+        </div>
+        </div>
+
+        <!--메인 슬라이드 -->
+        <script>
+            $(function () {
+                var slideWrap = $('.slide-wrap');
+                var slide = $('.main-visual');
+                var autoplayButton = $('.autoplay-btn');
+                var videos = $('.main-visual .slide-item video');
+
+                slide.slick({
+                    slidesToShow: 1,
+                    speed: 600,
+                    dots: false,
+                    navigator: false,
+                });
+
+                // 비디오가 끝나면 재생 완료 이벤트를 감지하여 역재생 후 다시 재생
+                videos.on('ended', function () {
+                    this.currentTime = 0;
+                    this.play();
+                });
+
+                // 왼쪽으로 넘기는 버튼에 대한 이벤트 추가
+                $('.custom-prev-button').on('click', function () {
+                    slide.slick('slickPrev');
+                });
+
+                // 오른쪽으로 넘기는 버튼에 대한 이벤트 추가
+                $('.custom-next-button').on('click', function () {
+                    slide.slick('slickNext');
+                });
+
+                autoplayButton.on('click', function () {
+                    var autoplay = slideWrap.attr('data-autoplay');
+                    if (autoplay === 'Y') {
+                        slideWrap.attr('data-autoplay', 'N');
+                    } else if (autoplay === 'N') {
+                        slideWrap.attr('data-autoplay', 'Y');
+                    }
+                });
+
+                setInterval(function () {
+                    if (slideWrap.attr('data-autoplay') !== 'N') {
+                        var gaugeWidth = slide.find('.slick-active .item-gauge').width();
+                        var fillWidth = slide.find('.slick-active .gauge-fill').width();
+                        console.log(gaugeWidth, fillWidth);
+                        if (gaugeWidth === fillWidth) {
+                            console.log("!!");
+                            slide.slick('slickNext');
+                        }
+                    }
+                }, 500);
+            });
+
+        </script>
+
+    </main>
+
+
+
+    <article class="mode-best">
+
+        <div class="mode-best-b">
+            <img src="image/index-mode-best-b01.png">
+            <img src="image/index-mode-best-b02.png">
+        </div>
+
+        <div class="best-p">
+
+            <div class="mode-best-maint01">
+                <h2 class="title-t" data-aos="fade-up">여행은 <span class="green">모두투어</span></h2>
+
+                <h5 class="title-t-pc">◆</h5>
+
+                <p>해외여행, 국내여행, 패키지여행, 에어텔, 항공권, 호텔 등<br>국내 최대 여행포탈사이트 모두투어와 즐거운 여행을 떠나요!</p>
+
+            </div>
+
+            <div class="mode-best-maint02">
+                <h2 class="title-t">모두의 추천상품</h2>
+            </div>
+
+
+            <div class="mode-best-slide">
+
+
+                <div class="best-slide">
+
+                    <img
+                        src="https://img.modetour.com/eagle/photoimg/23460/bfile/636640682300868503.jpg?resize=y&resize_w=603&resize_h=360&w_h_fill=y">
+
+                    <div class="best-slide-t">
+
+                        <div>
+                            <p>해외여행</p>
+                            <h5>스페인 + 포르투갈 완벽일주 9일</h5>
+                        </div>
+
+                        <div>
+                            <h5><span class="bold">2,599,000</span>원~</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="best-slide">
+
+                    <img
+                        src="https://img.modetour.com/eagle/photoimg/10700/bfile/636723586217310766.png?resize=y&resize_w=603&resize_h=360&w_h_fill=y">
+
+                    <div class="best-slide-t">
+
+                        <div>
+                            <p>해외여행</p>
+                            <h5>[얼리버드] 후쿠오카/유후인/벳부 3일</h5>
+                        </div>
+
+                        <div>
+                            <h5><span class="bold">639,900</span>원~</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="best-slide">
+
+                    <img
+                        src="https://img.modetour.com/eagle/photoimg/51290/bfile/636016119229763231.jpg?resize=y&resize_w=603&resize_h=360&w_h_fill=y">
+
+                    <div class="best-slide-t">
+
+                        <div>
+                            <p>해외여행</p>
+                            <h5>[그리스]그리스 일주 7박9일</h5>
+                        </div>
+
+                        <div>
+                            <h5><span class="bold">3,699,000</span>원~</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="best-slide">
+
+                    <img
+                        src="https://img.modetour.com/eagle/photoimg/10648/bfile/635405804919115469.jpg?resize=y&resize_w=603&resize_h=360&w_h_fill=y">
+
+                    <div class="best-slide-t">
+
+                        <div>
+                            <p>해외여행</p>
+                            <h5>오사카/나라/교토/고베 3일</h5>
+                        </div>
+
+                        <div>
+                            <h5><span class="bold">799,900</span>원~</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <button type="button" class="custom-arrow best-prev"><img
+                    src="https://www.mayfield.co.kr/assets/images/slide_arr_green_l.png" alt="Previous"></button>
+            <button type="button" class="custom-arrow best-next"><img
+                    src="https://www.mayfield.co.kr/assets/images/slide_arr_green_r.png" alt="Next"></button>
+        </div>
+
+        <div class="mode-minibanner">
+
+            <div>
+                <img src="image/index-mode-minibanner01.png" alt="미니배너01">
+                <img src="image/index-mode-minibanner02.png" alt="미니배너02">
+                <img src="image/index-mode-minibanner03.png" alt="미니배너03">
+                <img src="image/index-mode-minibanner04.png" alt="미니배너04">
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.mode-best-slide').slick({
+                autoplay: true,
+                autoplaySpeed: 4000,
+                dots: false,
+                arrows: false,
+                slidesToShow: 3,
+                responsive: [
+                    {
+                        breakpoint: 1000,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+
+            // Custom Arrow Button Events
+            $('.best-prev').on('click', function () {
+                $('.mode-best-slide').slick('slickPrev');
+            });
+
+            $('.best-next').on('click', function () {
+                $('.mode-best-slide').slick('slickNext');
+            });
+        });
+    </script>
+
+
+    <article class="mode-time">
+
+        <div>
+
+            <div class="mode-best-maint01">
+                <h2 class="title-t"><span class="green">놓칠 수 없는</span> <br>모두의 타임특가</h2>
+            </div>
+
+            <div>
+
+
+                <div class="time-container">
+
+                    <div class="time-count">
+
+                        <img src="https://www.modetour.com/icons/hotels/icon_time_26_white.svg">
+
+                        <div class="co">
+                            <span id="days">00</span>
+                            일
+                        </div>
+                        <div class="co">
+                            <span id="hours">00</span>
+                            :
+                        </div>
+                        <div class="co">
+                            <span id="minutes">00</span>
+                            :
+                        </div>
+                        <div class="co">
+                            <span id="seconds">00</span>
+                            남았습니다.
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="time-main">
+            <div class="t-slider t-slider-for">
+                <div>
+                    <div class="t-small">
+                        <img
+                            src="https://lh3.googleusercontent.com/fife/ALs6j_FrRaZDVmVtiMVlwVXMicSjDekagpWQrofiSdVFW9toUTFURSwUbnBFJkGejMBN9Rul59jfoomNkPEIQqlNUeMInw0N76jbi9KXFcDs87eGtVhsFvXCbJQbv5XoUjGsoZtccpOXbeAHsYkGeTkVor3uvmdr6NTsPARLZPGd4kjOUB8F8QY_fTYmKTQL8SFpxaqlkxwlm7sE06HQj_Q7R0AY-pLJ_0p5s93jCRZmIPLADuz8D_GNjILjG220xAQiBxWSVAhA4adQm1bHZMSabeI5tH4KCs2r6CX7njJXL2_Z6J8YWBrgAYPX2CGU_vj1yQ_1JWuNxPIVN757ZzX49PSlhDT7EEw3S26f-x19f4zpxhQUEX0dINaLPpgDIawfE09sBzc_wExkTc0S7Ns30IPnZTTV255gPCrDAsIxJPMX0XwYKOnA6Wz7IALI3tq_gfo-yXX_5xgXY5io0hbJmCuGBv7Eaqat_0mcV5bPNJibDJ95r_GTKyWGb5MNay8cdNt95-WpInHq1olq3bo3irYi8jtBealNLvkDxu0XMAzt6EoccuFRaW_FcxWxA2VYhwQbhFD0g8JqdnPMIPLeD2DYXsZfeBx97-ZkuenKax8RjSqRVwULlf-f4mg3xybC7j2XuwRobwUVhC1cZPIvkV1i5XGhKWlOcqOm9E7LsOfmui7RUZajCuzZKS9VN3qhI1cyEkfccwF5mpUQ_R1_QjjblfGaLWo28KEDfOIpots1ruKwPMBY_g_rB9hN64Fu2xfFkcENzo5QBgjF5HDrXC-0bZHROCzNGXJkUvWQACMWyVbCqCq9DotgM_JvXAfzu6DyMjjn9JhpWdO3vIkb6H5AJ-d1LvfJx7WvlYPDMvhzPoS9fLqBSIfF6jTbHgVyg6Ms4P1FuHhjN2h-YErhqdc9Wk4ibUrHKZQpSIsku75xFHZKcvioMw-V5vuagS_mixixv8Jdyu28V43O4EB558HgnsEc3bNOIX1lovKt2ShpfeZ4uOKetNLge9VWy-UB7mDIjkDxQU5jseF9Ze1hy-bNJQbEPv8JFAyHgB1yxJpJNDoWSMFy7grGGxJFA3rXRr19fFhkvydsWcVbt_sBTgZGm1jBm270X-8d-6YzBvOPnmZxhc6MlzCmo0ksoKz4HzpXNcX1fOb1_l8JQ26dVwp_rhNuZEhhVrAHqQd3elO3tzP0oFHdxBLM9ag_wT2TIeFJa3POxIk5QCGKhS6NDhkh75TJj3PoREICTSGcg5EBRurDHgVjJcjdW_JkJhtfAHb3V_uwRLjtEorg9P-qa58AeGrSzDn7MN3zeuM8kMkxrTwk9yAiUUE5kEiaeycjUypNM9dVx2VA9P4hNOiroS9ccYz1ze1oQci-elQbWUwvANCM_fvrkBmKqszpDf7TZQcA7jFq9Uv6NUT94hbzWhXxgN_lDH4TZAjqQsTH2OLv8LjprVwKGK0-X01UXPiXAOyfwzS0rCmlWUUxbwIVv8SBpxlnTNgXGYUEipb5wBn6PGeOsQcEmE-SHTgQn3XB-e9kkK96L5K8">
+
+                        <div class="time-slide-t">
+                            <div>
+                                <h5>떴다!유럽특가😆 동유럽</h5>
+                                <p>#체코 #오스트리아 #헝가리</p>
+                            </div>
+
+                            <div>
+                                <h5>특가<span class="bold">1,999,000</span>원 부터~</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="t-small">
+                        <img
+                            src="https://img.modetour.com/eagle/photoimg/18962/rfile/635697236132491817.jpg?resize=y&resize_w=670&resize_h=400&w_h_fill=y">
+
+                        <div class="time-slide-t">
+                            <div>
+                                <h5>떴다!유럽특가😆 스페인/포르투갈</h5>
+                                <p>#전일정 4성호텔 #가우디투어</p>
+                            </div>
+
+                            <div>
+                                <h5>특가<span class="bold">1,799,000</span>원 부터~</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="t-small">
+                        <img
+                            src="https://img.modetour.com/eagle/photoimg/1539/rfile/635737603124364966.jpg?resize=y&resize_w=670&resize_h=400&w_h_fill=y">
+
+                        <div class="time-slide-t">
+                            <div>
+                                <h5>[라이브M] 시드니 / 브리즈번 / 골드코스트 6/7일</h5>
+                                <p>#6일 #7일 #골드코스트 #브리즈번 #시드니</p>
+                            </div>
+
+                            <div>
+                                <h5>특가<span class="bold">999,000</span>원 부터~</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="t-small">
+                        <img
+                            src="https://img.modetour.com/eagle/photoimg/65025/rfile/637124376881567632.jpg?resize=y&resize_w=670&resize_h=400&w_h_fill=y">
+
+                        <div class="time-slide-t">
+                            <div>
+                                <h5>[앱푸쉬] 북유럽 / 동유럽 / 스페인, 유럽 파헤치기!</h5>
+                                <p>#동유럽3국 #북유럽4국 #스페인&포르투갈</p>
+                            </div>
+
+                            <div>
+                                <h5>특가<span class="bold">1,899,000</span>원 부터~</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="t-small">
+                        <img
+                            src="https://img.modetour.com/eagle/photoimg/50859/rfile/636128960434770138.jpg?resize=y&resize_w=670&resize_h=400&w_h_fill=y">
+
+                        <div class="time-slide-t">
+                            <div>
+                                <h5>떴다!유럽특가😆 코카서스 3국 여행</h5>
+                                <p>#미지의땅 #이색여행
+                                </p>
+                            </div>
+
+                            <div>
+                                <h5>특가<span class="bold">3,199,000</span>원 부터~</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="t-slider t-slider-nav">
+                <div>
+                    <h3><img
+                            src="https://lh3.googleusercontent.com/fife/ALs6j_FrRaZDVmVtiMVlwVXMicSjDekagpWQrofiSdVFW9toUTFURSwUbnBFJkGejMBN9Rul59jfoomNkPEIQqlNUeMInw0N76jbi9KXFcDs87eGtVhsFvXCbJQbv5XoUjGsoZtccpOXbeAHsYkGeTkVor3uvmdr6NTsPARLZPGd4kjOUB8F8QY_fTYmKTQL8SFpxaqlkxwlm7sE06HQj_Q7R0AY-pLJ_0p5s93jCRZmIPLADuz8D_GNjILjG220xAQiBxWSVAhA4adQm1bHZMSabeI5tH4KCs2r6CX7njJXL2_Z6J8YWBrgAYPX2CGU_vj1yQ_1JWuNxPIVN757ZzX49PSlhDT7EEw3S26f-x19f4zpxhQUEX0dINaLPpgDIawfE09sBzc_wExkTc0S7Ns30IPnZTTV255gPCrDAsIxJPMX0XwYKOnA6Wz7IALI3tq_gfo-yXX_5xgXY5io0hbJmCuGBv7Eaqat_0mcV5bPNJibDJ95r_GTKyWGb5MNay8cdNt95-WpInHq1olq3bo3irYi8jtBealNLvkDxu0XMAzt6EoccuFRaW_FcxWxA2VYhwQbhFD0g8JqdnPMIPLeD2DYXsZfeBx97-ZkuenKax8RjSqRVwULlf-f4mg3xybC7j2XuwRobwUVhC1cZPIvkV1i5XGhKWlOcqOm9E7LsOfmui7RUZajCuzZKS9VN3qhI1cyEkfccwF5mpUQ_R1_QjjblfGaLWo28KEDfOIpots1ruKwPMBY_g_rB9hN64Fu2xfFkcENzo5QBgjF5HDrXC-0bZHROCzNGXJkUvWQACMWyVbCqCq9DotgM_JvXAfzu6DyMjjn9JhpWdO3vIkb6H5AJ-d1LvfJx7WvlYPDMvhzPoS9fLqBSIfF6jTbHgVyg6Ms4P1FuHhjN2h-YErhqdc9Wk4ibUrHKZQpSIsku75xFHZKcvioMw-V5vuagS_mixixv8Jdyu28V43O4EB558HgnsEc3bNOIX1lovKt2ShpfeZ4uOKetNLge9VWy-UB7mDIjkDxQU5jseF9Ze1hy-bNJQbEPv8JFAyHgB1yxJpJNDoWSMFy7grGGxJFA3rXRr19fFhkvydsWcVbt_sBTgZGm1jBm270X-8d-6YzBvOPnmZxhc6MlzCmo0ksoKz4HzpXNcX1fOb1_l8JQ26dVwp_rhNuZEhhVrAHqQd3elO3tzP0oFHdxBLM9ag_wT2TIeFJa3POxIk5QCGKhS6NDhkh75TJj3PoREICTSGcg5EBRurDHgVjJcjdW_JkJhtfAHb3V_uwRLjtEorg9P-qa58AeGrSzDn7MN3zeuM8kMkxrTwk9yAiUUE5kEiaeycjUypNM9dVx2VA9P4hNOiroS9ccYz1ze1oQci-elQbWUwvANCM_fvrkBmKqszpDf7TZQcA7jFq9Uv6NUT94hbzWhXxgN_lDH4TZAjqQsTH2OLv8LjprVwKGK0-X01UXPiXAOyfwzS0rCmlWUUxbwIVv8SBpxlnTNgXGYUEipb5wBn6PGeOsQcEmE-SHTgQn3XB-e9kkK96L5K8">
+                    </h3>
+                </div>
+                <div>
+                    <h3><img
+                            src="https://img.modetour.com/eagle/photoimg/18962/rfile/635697236132491817.jpg?resize=y&resize_w=260&resize_h=130&w_h_fill=y">
+                    </h3>
+                </div>
+                <div>
+                    <h3><img
+                            src="https://img.modetour.com/eagle/photoimg/1539/rfile/635737603124364966.jpg?resize=y&resize_w=260&resize_h=130&w_h_fill=y">
+                    </h3>
+                </div>
+                <div>
+                    <h3><img
+                            src="https://img.modetour.com/eagle/photoimg/65025/rfile/637124376881567632.jpg?resize=y&resize_w=260&resize_h=130&w_h_fill=y">
+                    </h3>
+                </div>
+                <div>
+                    <h3><img
+                            src="https://img.modetour.com/eagle/photoimg/50859/rfile/636128960434770138.jpg?resize=y&resize_w=260&resize_h=130&w_h_fill=y">
+                    </h3>
+                </div>
+            </div>
+
+        </div>
+
+        <script>
+            $(document).ready(function () {
+                $('.t-slider-for').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    fade: true,
+                    asNavFor: '.t-slider-nav'
+                });
+                $('.t-slider-nav').slick({
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    asNavFor: '.t-slider-for',
+                    dots: false,
+                    arrows: false,
+                    focusOnSelect: true
+                });
+            });
+        </script>
+
+    </article>
+
+    <script>
+        // 파라미터로 지정된 시간을 객체 생성
+        let count = new Date("12 30, 2025 00:00:01").getTime();
+        // 셋인터벌 함수 생성
+        let x = setInterval(function () {
+            // 현재 시간 객체 생성
+            let now = new Date().getTime();
+            // 지정된 시간 마이너스 현재시간 값을 변수 d에 넘김. 즉 디는 남은 시간
+            let d = count - now;
+
+            let days = Math.floor(d / (1000 * 60 * 60 * 24));
+            let hours = Math.floor((d % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            let minutes = Math.floor((d % (1000 * 60 * 60)) / (1000 * 60));
+            let seconds = Math.floor((d % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHTML = days;
+            document.getElementById("hours").innerHTML = hours;
+            document.getElementById("minutes").innerHTML = minutes;
+            document.getElementById("seconds").innerHTML = seconds;
+
+            // d가 0보다 작거나 같아지면 setInterval 함수 호출을 취소함
+            // 반복되는 인터벌은 1s로 셋팅
+            if (d <= 0) {
+                clearInterval(x);
+            }
+        }, 1000);
+
+        // getTime() - https://www.w3schools.com/jsref/jsref_gettime.asp
+        // math.floor - https://www.w3schools.com/jsref/jsref_floor.asp
+        // innerHTML - https://www.w3schools.com/jsref/prop_html_innerhtml.asp
+        // clearInterval - https://www.w3schools.com/jsref/met_win_clearinterval.asp
+
+        // 1day = 1000ms * 60s * 60m * 24h = 86,400,000ms
+        // 1h= 1000ms * 60s * 60m = 3,600,000ms
+        // 1m = 1000ms * 60s = 60,000ms
+        // 1s = 1000ms
+    </script>
+
+
+
+
+    <article class="mode-banner01">
+
+        <div class="b01-slider">
+
+            <div class="b01-banner">
+
+                <div class="element"><img
+                        src="https://img.modetour.com/eagle/photoimg/4b7d66493568404280e37eda3d441225.png?resize=y&resize_w=527&resize_h=180&w_h_fill=y"
+                        alt="배너01"></div>
+                <div class="element"><img
+                        src="https://img.modetour.com/eagle/photoimg/345726cddce54542aeafc1dee48e46d8.png?resize=y&resize_w=527&resize_h=180&w_h_fill=yy"
+                        alt="배너02"></div>
+                <div class="element"><img
+                        src="https://img.modetour.com/eagle/photoimg/03866583c244443bbc79597ba8d3d86e.png?resize=y&resize_w=527&resize_h=180&w_h_fill=y"
+                        alt="배너03"></div>
+                <div class="element"><img
+                        src="https://img.modetour.com/eagle/photoimg/52413e1664604d2bb080314e2ba421fb.png?resize=y&resize_w=527&resize_h=180&w_h_fill=y"
+                        alt="배너04"></div>
+
+                <div class="element"><img
+                        src="https://img.modetour.com/eagle/photoimg/5abd95f0bc604e1f8630ebcbb3e980cf.png?resize=y&resize_w=527&resize_h=180&w_h_fill=y"
+                        alt="배너05"></div>
+
+
+
+            </div>
+        </div>
+
+    </article>
+
+    <script>
+        $(document).ready(function () {
+            var windowWidth = $(window).width();
+            var slidesToShow = (windowWidth >= 800) ? 3 : 1;
+
+            $(".b01-banner").slick({
+                slidesToShow: slidesToShow,
+                infinite: true,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000
+            });
+
+            $(window).resize(function () {
+                windowWidth = $(window).width();
+                slidesToShow = (windowWidth >= 800) ? 3 : 1;
+                $(".b01-banner").slick('slickSetOption', 'slidesToShow', slidesToShow, true);
+            });
+        });
+    </script>
+
+
+    <hr class="hr01">
+
+    <article class="mode-best mode-best02">
+
+
+
+        <div class="best-p">
+
+
+
+            <div class="mode-best-maint02">
+                <h2 class="title-t">이런여행 <span class="green">어때요?</span></h2>
+            </div>
+
+
+            <div class="mode-best-slide">
+
+
+                <div class="best-slide">
+
+                    <img class="best02-p"
+                        src="https://img.modetour.com/eagle/photoimg/2469/rfile/636897054059437220.jpg?resize=y&resize_w=384&resize_h=420&w_h_fill=y">
+
+                    <div class="best-slide-t">
+
+                        <div>
+
+                            <h5>호치민/무이네/판티엣 4일</h5>
+                            <h5 class="gray">#해변 #사막 #와이너리 #마사지</h5>
+                        </div>
+
+                        <div>
+                            <h5><span class="bold">303,000</span>원~</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="best-slide">
+
+                    <img class="best02-p"
+                        src="https://img.modetour.com/eagle/photoimg/18962/rfile/636522202544639856.jpg?resize=y&resize_w=384&resize_h=420&w_h_fill=y">
+
+                    <div class="best-slide-t">
+
+                        <div>
+
+                            <h5>스페인/포르투갈 일주 9일</h5>
+                            <h5 class="gray">#전일정4성 #10가지맛체험</h5>
+                        </div>
+
+                        <div>
+                            <h5><span class="bold">1,799,900</span>원~</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="best-slide">
+
+                    <img class="best02-p"
+                        src="https://img.modetour.com/eagle/photoimg/29039/rfile/635896776231438164.jpg?resize=y&resize_w=384&resize_h=420&w_h_fill=y">
+
+                    <div class="best-slide-t">
+
+                        <div>
+
+                            <h5>마카오+홍콩 3/4일</h5>
+                            <h5 class="gray">#자유일정 #마카오 #홍콩</h5>
+                        </div>
+
+                        <div>
+                            <h5><span class="bold">799,000</span>원~</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="best-slide">
+
+                    <img class="best02-p"
+                        src="https://img.modetour.com/eagle/photoimg/24275/rfile/636058282938391173.jpg?resize=y&resize_w=384&resize_h=420&w_h_fill=y">
+
+                    <div class="best-slide-t">
+
+                        <div>
+
+                            <h5>고마츠/알펜루트 패키지 3/4일</h5>
+                            <h5 class="gray">#얼리버드할인 #대한항공 #일본소도시</h5>
+                        </div>
+
+                        <div>
+                            <h5><span class="bold">589,900</span>원~</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <button type="button" class="custom-arrow02 best-prev"><img
+                    src="https://www.mayfield.co.kr/assets/images/slide_arr_green_l.png" alt="Previous"></button>
+            <button type="button" class="custom-arrow02 best-next"><img
+                    src="https://www.mayfield.co.kr/assets/images/slide_arr_green_r.png" alt="Next"></button>
+        </div>
+
+
+    </article>
+
+
+    <hr class="hr02">
+
+    <article class="mode-playvideo">
+
+        <h2 class="title-t">특별한 여행<br><span class="green">PLAYLIST</span></h2>
+
+        <div class="mode-video">
+
+
+
+            <!-- 클릭할 이미지 -->
+            <div class="mode-video-img">
+                <img src="./image/index-mode-video-img01.jpg" alt="YouTube Thumbnail"
+                    onclick="openPopup('https://www.youtube.com/embed/tLswRwoU3xg?si=PdPo0zHOAt6-TJjl')">
+
+                <button type="button" class="open-popup-btn"
+                    onclick="openPopup('https://www.youtube.com/embed/tLswRwoU3xg?si=PdPo0zHOAt6-TJjl')"><img
+                        src="image/index-mode-video-img02.jpg"></button>
+            </div>
+
+            <!-- 팝업 동영상 -->
+            <div class="mode-popup-container">
+                <div class="close-videobtn" onclick="closePopup()"><img
+                        src="https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/close.svg"></div>
+                <iframe class="popup-video" frameborder="0" src="" allowfullscreen></iframe>
+            </div>
+
+            <script>
+                function openPopup(videoLink) {
+                    const popupContainer = document.querySelector('.mode-video .mode-popup-container');
+                    const popupVideo = document.querySelector('.mode-video .popup-video');
+
+                    // 팝업 내 동영상 업데이트
+                    popupVideo.src = videoLink;
+
+                    // 팝업 보이기
+                    popupContainer.style.display = 'flex';
+                }
+
+                function closePopup() {
+                    const popupContainer = document.querySelector('.mode-video .mode-popup-container');
+                    const popupVideo = document.querySelector('.mode-video .popup-video');
+
+                    // 팝업 숨기기
+                    popupContainer.style.display = 'none';
+
+                    // 동영상 멈추기 및 URL 초기화
+                    popupVideo.src = '';
+                }
+            </script>
+        </div>
+
+    </article>
+
+
+    <article class="mode-best mode-insta">
+
+        <div class="best-p">
+
+            <div class="mode-best-maint02">
+                <h2 class="title-t">Instagram<span class="insta-gray">@modenet</span></h2>
+            </div>
+
+            <div class="mode-insta-slide">
+                <div class="best-insta-slide">
+                    <div class="image-container">
+                        <img class="bestinsta-p" src="./image/index-bestinsta-p01.jpg">
+                        <div class="overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="best-insta-slide">
+                    <div class="image-container">
+                        <img class="bestinsta-p" src="./image/index-bestinsta-p02.jpg">
+                        <div class="overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="best-insta-slide">
+                    <div class="image-container">
+                        <img class="bestinsta-p" src="./image/index-bestinsta-p03.jpg">
+                        <div class="overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="best-insta-slide">
+                    <div class="image-container">
+                        <img class="bestinsta-p" src="./image/index-bestinsta-p04.jpg">
+                        <div class="overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="best-insta-slide">
+                    <div class="image-container">
+                        <img class="bestinsta-p" src="./image/index-bestinsta-p05.jpg">
+                        <div class="overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="best-insta-slide">
+                    <div class="image-container">
+                        <img class="bestinsta-p" src="./image/index-bestinsta-p06.jpg">
+                        <div class="overlay">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="custom-arrow03 best-prev">
+                <img src="image/index-customarrow-left.png" alt="Previous">
+            </button>
+            <button type="button" class="custom-arrow03 best-next">
+                <img src="image/index-customarrow-right.png" alt="Next">
+            </button>
+
+        </div>
+
+        <div class="topButton">
+            <a id="bottomButton" href="javascript:window.scrollTo(0,0);">TOP</a><br />
+        </div>
+
+    </article>
+
+    <script>
+        $(document).ready(function () {
+            $('.mode-insta-slide').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: false,
+                arrows: false,
+                slidesToShow: 6,
+                responsive: [
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 800,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 1366,
+                        settings: {
+                            slidesToShow: 4
+                        }
+                    }
+                ]
+            });
+
+            // Custom Arrow Button Events
+            $('.best-prev').on('click', function () {
+                $('.mode-insta-slide').slick('slickPrev');
+            });
+
+            $('.best-next').on('click', function () {
+                $('.mode-insta-slide').slick('slickNext');
+            });
+
+            // Image click event to navigate to sns.html
+            $('.image-container').on('click', function () {
+                window.location.href = 'sns.html';
+            });
+        });
+    </script>
+
+
+
+    <footer>
+
+        <div class="footer-mainIcon"><img src="image/header-mainlogo.png" alt="모두투어아이콘"></div>
+
+        <div>
+
+            <div class="footer-02">
+                <p class="green">회사소개</p>
+                <p>개인정보처리방침</p>
+                <p>여행약관</p>
+                <p>이용약관</p>
+                <p>대리점개설문의</p>
+            </div>
+
+            <div class="footer-03">
+                <p>Address. 서울특별시 중구 을지로 16 백남빌딩 5층</p>
+                <p>Tel 1544-5252</p>
+                <p>Fax 02-2021-7800</p>
+                <p>사업자등록번호 202-81-45295</p>
+                <p>통신판매업신고번호 중구 제03500호</p>
+            </div>
+
+            <div class="footer-04">
+                <p>COPYRIGHT 1989-2023 MODETOUR. ALL RIGHTS RESERVED.</p>
+            </div>
+
+        </div>
+
+        <div class="footer-subIcon">
+            <div><img src="https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/icon_chn.svg"></div>
+            <div><img src="https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/icon_insta.svg"></div>
+            <div><img src="https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/icon_facebook.svg">
+            </div>
+            <div><img src="https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/icon_youtube.svg">
+            </div>
+        </div>
+
+    </footer>
+
+
+</body>

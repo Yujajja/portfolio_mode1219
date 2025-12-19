@@ -1,0 +1,1560 @@
+<!doctype html>
+<html lang="ko">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+    <title>mode-cyj</title>
+    <link rel="stylesheet" href="board.css">
+    <style type="text/css"></style>
+    <!-- AOS Download-->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- 스와이프 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!--slick-->
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css'>
+    <link rel='stylesheet' href='https://mreq.github.io/slick-lightbox/dist/slick-lightbox.css'>
+
+    
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- 폰트어썸 불러오기 -->
+    <script src="https://kit.fontawesome.com/eafd0a4e2d.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+
+    <main>
+
+        <header>
+
+
+
+
+            <div class="m-header">
+
+                <a href="index.html" class="logo img-box block">
+                    <img src="./image/header-mainlogo.png" alt="logo">
+                </a>
+
+
+
+                <a href="#" class="search img-box block">
+
+                    <img src="https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/header_r_icon.svg"
+                        alt="search">
+                    <h5 class="search-text">예약</h5>
+                </a>
+
+                <a href="#" class="contact">Contant Us</a>
+
+                <div class="m-menu-btn">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <p class="m-menu-txt">MENU</p>
+
+
+
+                <div class="mobile-mask"></div>
+
+
+
+                <div class="m-menu-list">
+
+
+
+                    <ul>
+
+                        <li class="m-menu-close-btn" onclick="모바일메뉴닫기()"><img
+                                src="https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/close.svg">
+                        </li>
+
+
+
+
+                        <li class="list-icon"><img src="./image/header-list-icon01.png">
+                            <a href="login.html">
+                                <p><span>로그인</span>
+                            </a>하고<br>
+                            더 많은 혜택을 확인하세요</p>
+                        </li>
+
+
+
+
+                        <li class="delay-1">
+                            <a>PRODUCT</a>
+                        </li>
+                        <li class="delay-2 delay-d">
+                            <a href="booking.html"><span class="list-span">BOOKING</span></a>
+                        </li>
+                        <li class="delay-2">
+                            <a>BOARD</a>
+                        </li>
+                        <li class="delay-2">
+                            <a href="qna.html"><span class="list-span">QNA</span></a>
+                        </li>
+                        <li class="delay-3">
+                            <a href="faq.html"><span class="list-span">FAQ</span></a>
+                        </li>
+                        <li class="delay-4 delay-d">
+                            <a href="event.html"><span class="list-span">EVENT</span></a>
+                        </li>
+
+                        <li class="delay-4">
+                            <a>ACCOUNT</a>
+                        </li>
+                        <li class="delay-5">
+                            <a href="login.html"><span class="list-span">LOGIN</span></a>
+                        </li>
+                        <li class="delay-5">
+                            <a href="joinus.html"><span class="list-span">JOINUS</span></a>
+                        </li>
+                        <li class="delay-5">
+                            <a href="remove.html"><span class="list-span">REMOVE</span></a>
+                        </li>
+
+                    </ul>
+
+
+
+                    <ul class="list-fonticon">
+                        <li><a><i class="fa-regular fa-circle-user"></i></a></li>
+                        <li><a><i class="fa-regular fa-bell"></i></a></li>
+                        <li><a><i class="fa-solid fa-headset"></i></a></li>
+                        <li><a><i class="fa-solid fa-globe"></i></a></li>
+                    </ul>
+
+
+                    <ul class="list-b">
+                        <li>
+                            <a></a>
+                        </li>
+                    </ul>
+
+
+                    </ul>
+
+                </div>
+
+
+                <div class="m-search-on">
+
+                    <ul>
+
+                        <li class="m-search-close-btn" onclick="서치메뉴닫기()"><img
+                                src="https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/close.svg">
+                        </li>
+
+                    </ul>
+
+                    <div class="m-search-b"></div>
+
+
+                    <div class="m-search-box">
+
+                        <div>
+                            <h1 class="m-search-maint">Booking</h1>
+                            <img src="https://www.svgrepo.com/show/107293/flight-ticket.svg">
+                        </div>
+
+                        <section>
+                            <h5 id="menuTitle" class="search-sub-t">지역을 선택해주세요.</h5>
+
+                            <div class="menu-accordion scrollY">
+
+                                <div class="menu-accordion-item">
+                                    <div class="menu-accordion-header">유럽</div>
+                                    <div class="menu-accordion-content">
+                                        <div class="submenu-accordion sub-accordion-menu-1">
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">프랑스</div>
+
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">스위스</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">이탈리아</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">영국</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">독일</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">영국</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">네덜란드</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">벨기에</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">체코</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">오스트리아</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">헝가리</div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="menu-accordion-item">
+                                    <div class="menu-accordion-header">동남아시아</div>
+                                    <div class="menu-accordion-content">
+                                        <div class="submenu-accordion">
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">방콕</div>
+
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">파타야</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">푸켓</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">치앙마이</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">치앙라이</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">카오락</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">다낭</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">나트랑</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">달랏</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">하노이</div>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="menu-accordion-item">
+                                    <div class="menu-accordion-header">서남아시아</div>
+                                    <div class="menu-accordion-content">
+                                        <div class="submenu-accordion">
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">인도네시아</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">발리</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">인도</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">네팔</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">몰디브</div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="menu-accordion-item">
+                                    <div class="menu-accordion-header">일본</div>
+                                    <div class="menu-accordion-content">
+                                        <div class="submenu-accordion">
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">큐슈</div>
+
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">북해도</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">알펜루트</div>
+
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">오키나와</div>
+                                            </div>
+
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">시코쿠/주고쿠</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="menu-accordion-item">
+                                    <div class="menu-accordion-header">중국/홍콩/마카오</div>
+                                    <div class="menu-accordion-content">
+                                        <div class="submenu-accordion">
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">장가계</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">백두산</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">황산</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">상해</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">북경</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">서안</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">하이난</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">홍콩</div>
+                                            </div>
+                                            <div class="submenu-accordion-item">
+                                                <div class="submenu-accordion-header">마카오</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </section>
+
+                        <hr>
+
+                        <section class="calendar">
+
+                            <div>
+
+                                <h5 class="search-sub-t">여행 예정일</h5>
+
+                                <button onclick="showPopup()">일정 보기</button>
+
+                            </div>
+
+
+                            <div class="checkInOutInfo" onclick="showPopup()">
+                                <div>
+                                    <p>
+                                        <span>가는 날</span>
+                                        <label id="check_in_day"></label>
+                                    </p>
+                                    <p class="space">~</p>
+                                    <p>
+                                        <span>오는 날</span>
+                                        <label id="check_out_day"></label>
+                                    </p>
+                                </div>
+                            </div>
+
+
+
+                    </div>
+
+                    <!-- 캘린더 팝업 -->
+
+                    <section>
+
+                        <div id="popup-container">
+                            <div id="popup-content">
+                                <div id="calendarPopup">
+
+                                    <button id="closeButton" onclick="hidePopup()"><img
+                                            src="https://cdn3.iconfinder.com/data/icons/simple-arrows-essentials/48/v-09-512.png">
+                                        <div class="select-b">날짜선택</div>
+                                    </button>
+
+
+                                    <section>
+
+                                        <div class="calendar-wrap">
+                                            <div class="calendar-middle-wrap">
+                                                <div class="cal_nav">
+                                                    <a href="javascript:;" class="nav-btn go-prev"></a>
+                                                    <span class="year-month start-year-month"></span>
+                                                    <a href="javascript:;" class="nav-btn go-next"></a>
+                                                </div>
+                                                <div class="cal_wrap">
+                                                    <div class="days">
+                                                        <div class="day">일</div>
+                                                        <div class="day">월</div>
+                                                        <div class="day">화</div>
+                                                        <div class="day">수</div>
+                                                        <div class="day">목</div>
+                                                        <div class="day">금</div>
+                                                        <div class="day">토</div>
+                                                    </div>
+                                                    <div class="dates start-calendar"></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="calendar-middle-wrap">
+                                                <div class="cal_nav">
+                                                    <a href="javascript:;" class="nav-btn go-prev"></a>
+                                                    <span class="year-month last-year-month"></span>
+                                                    <a href="javascript:;" class="nav-btn go-next"></a>
+                                                </div>
+                                                <div class="cal_wrap">
+                                                    <div class="days">
+                                                        <div class="day">일</div>
+                                                        <div class="day">월</div>
+                                                        <div class="day">화</div>
+                                                        <div class="day">수</div>
+                                                        <div class="day">목</div>
+                                                        <div class="day">금</div>
+                                                        <div class="day">토</div>
+                                                    </div>
+                                                    <div class="dates last-calendar"></div>
+                                                </div>
+                                            </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </section>
+
+
+
+                    <script>
+                        // 초기에 팝업을 숨기는 함수
+                        function hidePopup() {
+                            document.getElementById('popup-container').style.display = 'none';
+                        }
+
+                        // 페이지 로드 시 팝업 숨김
+                        window.addEventListener('DOMContentLoaded', hidePopup);
+
+                        // 팝업 보여주는 함수
+                        function showPopup() {
+                            document.getElementById('popup-container').style.display = 'flex';
+                        }
+
+                        // 팝업을 보여주는 이벤트 처리
+                        document.getElementById('openButton').addEventListener('click', showPopup);
+                    </script>
+
+
+
+
+
+
+
+
+                    <script>
+                        // 날짜 포맷 정규식 (yyyy-mm-dd)
+                        const regexDate = RegExp(/^\d{4}-(0[1-9]|1[012])-(0[1-9]|[12][0-9]|3[01])$/);
+                        // date 객체 만들기
+                        const thisDate = new Date();
+                        // 오늘 날짜 (yyyy-mm-dd 00:00:00)
+                        const today = new Date();
+                        // 달력이도 최대 개월 수
+                        const limitMonth = 4;
+                        // 달력에서 표기하는 날짜 객체
+                        let thisMonth = today;
+                        // 달력에서 표기하는 년
+                        let currentYear = thisMonth.getFullYear();
+                        // 달력에서 표기하는 월
+                        let currentMonth = thisMonth.getMonth();
+                        // 체크인 날짜
+                        let checkInDate = "";
+                        // 체크아웃 날짜
+                        let checkOutDate = "";
+
+                        $(document).ready(function () {
+                            // 달력 만들기
+                            calendarInit(thisMonth);
+
+                            // 이전달로 이동
+                            $('.go-prev').on('click', function () {
+                                const startDate = $('.start-year-month').html().split('.');
+
+                                // 달력이 현재 년 월 보다 같거나 작을경우 뒤로가기 막기
+                                if (getLimitMonthCheck(parseInt(startDate[0]), parseInt(startDate[1])) <= 0) {
+                                    return;
+                                }
+
+                                thisMonth = new Date(currentYear, currentMonth - 1, 1);
+                                calendarInit(thisMonth);
+                            });
+
+                            // 다음달로 이동
+                            $('.go-next').on('click', function () {
+                                const lastDate = $('.last-year-month').html().split('.');
+
+                                // 예약 가능 최대 개월수와 같거나 크다면 다음달 이동 막기
+                                if (getLimitMonthCheck(parseInt(lastDate[0]), parseInt(lastDate[1])) >= limitMonth) {
+                                    alert('최대예약 기간은 ' + limitMonth + '개월 입니다.');
+                                    return;
+                                }
+
+                                let limitYear = today.getFullYear();
+                                if (currentMonth + limitMonth >= 12) {
+                                    limitYear = limitYear + 1
+                                }
+
+                                thisMonth = new Date(currentYear, currentMonth + 1, 1);
+                                calendarInit(thisMonth);
+                            });
+                        });
+
+                        // 달력 그리기
+                        function calendarInit(thisMonth) {
+
+                            // 렌더링을 위한 데이터 정리
+                            currentYear = thisMonth.getFullYear();
+                            currentMonth = thisMonth.getMonth();
+
+                            // 렌더링 html 요소 생성
+                            let start_calendar = '';
+                            let last_calendar = '';
+
+                            makeStartCalendar();
+                            makeLastCalendar();
+
+                            // start_calendar
+                            function makeStartCalendar() {
+                                // 이전 달의 마지막 날 날짜와 요일 구하기
+                                const startDay = new Date(currentYear, currentMonth, 0);
+                                const prevDate = startDay.getDate();
+                                const prevDay = startDay.getDay();
+
+                                // 이번 달의 마지막날 날짜와 요일 구하기
+                                const endDay = new Date(currentYear, currentMonth + 1, 0);
+                                const nextDate = endDay.getDate();
+                                const nextDay = endDay.getDay();
+
+                                // 지난달
+                                for (let i = prevDate - prevDay; i <= prevDate; i++) {
+                                    start_calendar += pervDisableDay(i);
+                                }
+
+                                // 이번달
+                                for (let i = 1; i <= nextDate; i++) {
+                                    // 이번달이 현재 년도와 월이 같을경우
+                                    if (currentYear === today.getFullYear() && currentMonth === today.getMonth()) {
+                                        // 지난 날짜는 disable 처리
+                                        if (i < today.getDate()) {
+                                            start_calendar += pervDisableDay(i)
+                                        } else {
+                                            start_calendar += dailyDay(currentYear, currentMonth, i);
+                                        }
+                                    } else {
+                                        start_calendar += dailyDay(currentYear, currentMonth, i);
+                                    }
+                                }
+
+                                // 다음달 7 일 표시
+                                for (let i = 1; i <= (6 - nextDay); i++) {
+                                    start_calendar += nextDisableDay(i);
+                                }
+
+                                $('.start-calendar').html(start_calendar);
+                                // 월 표기
+                                $('.start-year-month').text(currentYear + '.' + zf((currentMonth + 1)));
+                            }
+
+                            // last_calendar
+                            function makeLastCalendar() {
+                                let tempCurrentYear = currentYear;
+                                let tempCurrentMonth = currentMonth + 1;
+
+                                if (tempCurrentMonth >= 12) {
+                                    tempCurrentYear = parseInt(tempCurrentYear) + 1;
+                                    tempCurrentMonth = 0;
+                                }
+
+                                // 이전 달의 마지막 날 날짜와 요일 구하기
+                                const startDay = new Date(tempCurrentYear, tempCurrentMonth, 0);
+                                const prevDate = startDay.getDate();
+                                const prevDay = startDay.getDay();
+
+                                // 이번 달의 마지막날 날짜와 요일 구하기
+                                const endDay = new Date(tempCurrentYear, tempCurrentMonth + 1, 0);
+                                const nextDate = endDay.getDate();
+                                const nextDay = endDay.getDay();
+
+                                // 지난달
+                                for (let i = prevDate - prevDay; i <= prevDate; i++) {
+                                    last_calendar += pervDisableDay(i);
+                                }
+
+                                // 이번달
+                                for (let i = 1; i <= nextDate; i++) {
+                                    // 이번달이 현재 년도와 월이 같을경우
+                                    if (tempCurrentYear === today.getFullYear() && tempCurrentMonth === today.getMonth()) {
+                                        // 지난 날짜는 disable 처리
+                                        if (i < today.getDate()) {
+                                            last_calendar += pervDisableDay(i)
+                                        } else {
+                                            last_calendar += dailyDay(tempCurrentYear, tempCurrentMonth, i);
+                                        }
+                                    } else {
+                                        last_calendar += dailyDay(tempCurrentYear, tempCurrentMonth, i);
+                                    }
+
+                                }
+
+                                // 다음달 7 일 표시
+                                for (let i = 1; i <= (6 - nextDay); i++) {
+                                    last_calendar += nextDisableDay(i);
+                                }
+
+                                $('.last-calendar').html(last_calendar);
+                                // 월 표기
+                                $('.last-year-month').text(tempCurrentYear + '.' + zf((tempCurrentMonth + 1)));
+                            }
+
+
+                            // 지난달 미리 보기
+                            function pervDisableDay(day) {
+                                return '<div class="day prev disable">' + day + '</div>';
+                            }
+
+                            // 이번달
+                            function dailyDay(currentYear, currentMonth, day) {
+                                const date = currentYear + '' + zf((currentMonth + 1)) + '' + zf(day);
+
+                                if (checkInDate === date) {
+                                    return '<div class="day current checkIn" data-day="' + date + '" onclick="selectDay(this)"><span>' + day + '</span><p class="check_in_out_p"></p><p>' + '</div>';
+                                } else if (checkOutDate === date) {
+                                    return '<div class="day current checkOut" data-day="' + date + '" onclick="selectDay(this)"><span>' + day + '</span><p class="check_in_out_p"></p><p>' + '</div>';
+                                } else {
+                                    return '<div class="day current" data-day="' + date + '" onclick="selectDay(this)"><span>' + day + '</span><p class="check_in_out_p"></p><p>' + '</div>';
+                                }
+                            }
+
+                            // 다음달 미리 보기
+                            function nextDisableDay(day) {
+                                return '<div class="day next disable">' + day + '</div>';
+                            }
+
+                            addClassSelectDay();
+                        }
+
+                        // 체크인 체크아웃 기간 안에 날짜 선택 처리
+                        function addClassSelectDay() {
+                            if (checkInDate !== "" && checkOutDate != "") {
+                                $('.day').each(function () {
+                                    const data_day = $(this).data('day');
+
+                                    if (data_day !== undefined && data_day >= checkInDate && data_day <= checkOutDate) {
+                                        $(this).addClass('selectDay');
+                                    }
+                                });
+
+
+                            }
+                        }
+
+                        // 달력 날짜 클릭
+                        function selectDay(obj) {
+                            if (checkInDate === "") {
+                                $(obj).addClass('checkIn');
+
+
+                                checkInDate = $(obj).data('day');
+
+                                $('#check_in_day').html(getCheckIndateHtml());
+
+                                lastCheckInDate();
+                            } else {
+                                // 체크인 날짜를 한번더 클릭했을때 아무 동작 하지 않기
+                                if (parseInt(checkInDate) === $(obj).data('day')) {
+                                    return;
+                                }
+
+                                // 체크인 날짜보다 체크아웃 날짜를 더 앞으로 찍었을경우 체크인 날짜와 체크아웃 날짜를 바꿔준다
+                                if (checkOutDate === "" && parseInt(checkInDate) > $(obj).data('day')) {
+                                    $('.checkIn').find('.check_in_out_p').html('');
+                                    $('.day').removeClass('checkIn');
+                                    $('#check_in_day').html("");
+
+                                    checkOutDate = checkInDate
+                                    checkInDate = $(obj).data('day');
+
+                                    $(obj).addClass('checkIn');
+                                    $('.checkIn').find('.check_in_out_p').html('출발일');
+
+                                    $('.day[data-day="' + checkOutDate + '"]').addClass('checkOut');
+
+                                    $('#check_in_day').html(getCheckIndateHtml());
+                                    $('#check_out_day').html(getCheckOutdateHtml());
+
+                                    addClassSelectDay();
+
+                                    return;
+                                }
+
+                                // 체크아웃
+                                if (checkOutDate === "") {
+                                    $(obj).addClass('checkOut');
+
+                                    checkOutDate = $(obj).data('day');
+
+                                    $('#check_out_day').html(getCheckOutdateHtml());
+
+                                    addClassSelectDay();
+                                } else {
+                                    // 체크아웃을 날짜 까지 지정했지만 체크인 날짜를 변경할 경우
+                                    if (confirm('출발 날짜를 변경 하시겠습니까?')) {
+                                        $('.checkIn').find('.check_in_out_p').html('');
+                                        $('.checkOut').find('.check_in_out_p').html('');
+
+                                        $('.day').removeClass('checkIn');
+                                        $('.day').removeClass('checkOut');
+                                        $('.day').removeClass('selectDay');
+
+                                        $(obj).addClass('checkIn');
+
+
+                                        checkInDate = $(obj).data('day');
+                                        checkOutDate = "";
+
+                                        $('#check_in_day').html(getCheckIndateHtml());
+                                        $('#check_out_day').html("");
+
+                                        lastCheckInDate();
+                                    }
+                                }
+                            }
+                        }
+
+                        // 체크인 날짜 표기
+                        function getCheckIndateHtml() {
+                            checkInDate = checkInDate.toString();
+                            return checkInDate.substring('0', '4') + "-" + checkInDate.substring('4', '6') + "-" + checkInDate.substring('6', '8') + " ( " + strWeekDay(weekday(checkInDate)) + " )";
+                        }
+
+                        // 체크아웃 날짜 표기
+                        function getCheckOutdateHtml() {
+                            checkOutDate = checkOutDate.toString();
+                            return checkOutDate.substring('0', '4') + "-" + checkOutDate.substring('4', '6') + "-" + checkOutDate.substring('6', '8') + " ( " + strWeekDay(weekday(checkOutDate)) + " )";
+                        }
+
+                        // 체크인 날짜 클릭시 예약 가능한 마지막 날인지 체크 마지막날 일경우 체크아웃 날짜 자동 선택
+                        function lastCheckInDate() {
+                            // 날짜 비교를 위해 시간값을 초기화 하기위해 체크인 날짜 다시 셋팅
+                            let thisCheckDate = new Date(conversion_date(checkInDate, 1));
+                            thisCheckDate = new Date(thisCheckDate.getFullYear(), thisCheckDate.getMonth(), thisCheckDate.getDate());
+
+                            // 예약 가능한 마지막달의 마지막 날짜 셋팅
+                            let thisLastDate = new Date(today.getFullYear(), ((today.getMonth() + 1) + limitMonth), 0);
+
+                            // 체크인 날짜 클릭시 해당일이 예약 가능한 달에 마지막 날짜 일때 체크아웃 강제 표기
+                            if (thisCheckDate.getTime() === thisLastDate.getTime()) {
+                                // 체크인 날짜에 하루 더하기
+                                let thisCheckOutDate = new Date(thisCheckDate.getFullYear(), thisCheckDate.getMonth(), thisCheckDate.getDate());
+                                thisCheckOutDate.setDate(thisCheckOutDate.getDate() + 1);
+                                // YYYYMMDD 형태로 변환
+                                thisCheckOutDate = thisCheckOutDate.getFullYear() + "" + zf((thisCheckOutDate.getMonth() + 1)) + "" + zf(thisCheckOutDate.getDate());
+
+                                checkOutDate = thisCheckOutDate;
+
+                                $($(".day div[data-day='" + checkOutDate + "']")).addClass('checkOut');
+
+                                if ($('.checkOut').find('p').hasClass('holi_day_p')) {
+                                    $('.checkOut').find('.holi_day_p').hide();
+                                }
+
+                                $('#check_out_day').html(getCheckOutdateHtml());
+
+                                addClassSelectDay();
+                            }
+                        }
+
+                        // 최대 개월수 체크
+                        function getLimitMonthCheck(year, month) {
+                            let months = ((today.getFullYear() - year) * 12);
+                            months -= (today.getMonth() + 1);
+                            months += month;
+
+                            return months;
+                        }
+
+                        // 날짜형태 변환
+                        function conversion_date(YYMMDD, choice) {
+                            const yyyy = YYMMDD.substring(0, 4);
+                            const mm = YYMMDD.substring(4, 6);
+                            const dd = YYMMDD.substring(6, 8);
+
+                            return (choice === 1)
+                                ? yyyy + "-" + zf(mm) + "-" + zf(dd)
+                                : yyyy + "." + zf(mm) + "." + zf(dd);
+                        }
+
+                        // 몇요일인지 알려주는 함수 (숫자 형태)
+                        function weekday(YYYYMMDD) {
+                            const weekday_year = YYYYMMDD.substring(0, 4);
+                            const weekday_menth = YYYYMMDD.substring(4, 6);
+                            const weekday_day = YYYYMMDD.substring(6, 9);
+
+                            return new Date(weekday_year + "-" + weekday_menth + "-" + weekday_day).getDay();
+                        }
+
+                        // 요일 리턴
+                        function strWeekDay(weekday) {
+                            switch (weekday) {
+                                case 0: return "일"
+                                    break;
+                                case 1: return "월"
+                                    break;
+                                case 2: return "화"
+                                    break;
+                                case 3: return "수"
+                                    break;
+                                case 4: return "목"
+                                    break;
+                                case 5: return "금"
+                                    break;
+                                case 6: return "토"
+                                    break;
+                            }
+                        }
+
+                        // 숫자 두자리로 만들기
+                        function zf(num) {
+                            num = Number(num).toString();
+
+                            if (Number(num) < 10 && num.length == 1) {
+                                num = "0" + num;
+                            }
+
+                            return num;
+                        }</script>
+
+
+                    </section>
+
+                    <section class="search-search">
+                        <h5 class="search-sub-t">최근검색</h5>
+
+                        <div class="center">
+                            <img class="search-none-icon" src="https://www.modetour.com/icons/icon_alert_30.svg">
+                            <p>최근 검색한 내용이 없습니다.</p>
+                        </div>
+
+                        <a href="booking.html" class="select-b">검색하기</a>
+                    </section>
+
+
+                </div>
+
+
+            </div>
+            </div>
+
+        </header>
+
+
+        <script>
+
+            window.onload = function () {
+                var link = document.querySelector('.search');
+                var screenWidth = window.innerWidth;
+
+                link.addEventListener('click', function (event) {
+                    if (screenWidth >= 800) {
+                        event.preventDefault();
+                        window.location.href = 'booking.html';
+                    }
+                });
+            };
+
+        </script>
+
+        <!-- 가로 800px이상이면 booking 페이지 실시 -->
+
+
+
+
+
+
+        <!-- 헤더 -->
+
+
+
+        <script>
+            // 모바일 메뉴 버튼
+            $('.m-header > .m-menu-btn').click(function () {
+                if ($(this).hasClass('active')) {
+                    $('html').removeClass('m-menu-scroll');
+
+                    $(this).removeClass('active');
+                    $(this).siblings('.mobile-mask').css('height', '');
+                    $(this).siblings('.m-menu-list').removeClass('active');
+                }
+                else {
+                    $('html').addClass('m-menu-scroll');
+
+                    $('.m-header > .search > img').attr('src', 'https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/header_r_icon.svg');
+                    $('.m-header > .m-search-on').removeClass('active');
+
+                    $(this).siblings('.m-menu-list').find(' > ul > li.active').removeClass('active');
+                    $(this).siblings('.m-menu-list').find(' > ul > li > ul').slideUp(0);
+
+                    $(this).addClass('active');
+                    $(this).siblings('.mobile-mask').css('height', '100%');
+                    $(this).siblings('.m-menu-list').addClass('active');
+                };
+            })
+
+
+
+
+
+
+            // 모바일 서치 온
+            $('.m-header > .search').click(function () {
+                if ($(window).innerWidth() <= 800) { // 수정된 부분: 가로 800px 이하에서만 서치 온 기능 활성화
+                    if ($('.m-header > .m-search-on').hasClass('active')) {
+                        $('html').removeClass('m-menu-scroll');
+
+                        $(this).find(' > img').attr('src', 'https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/header_r_icon.svg');
+                        $(this).siblings('.mobile-mask').css('height', '');
+                        $('.m-header > .m-search-on').removeClass('active');
+                    }
+                    else {
+                        $('html').addClass('m-menu-scroll');
+
+                        $('.m-header > .m-menu-btn').removeClass('active');
+                        $(this).siblings('.m-menu-list').removeClass('active');
+
+                        $(this).find(' > img').attr('src', 'https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/header_r_icon.svg');
+                        $(this).siblings('.mobile-mask').css('height', '100%');
+                        $('.m-header > .m-search-on').addClass('active');
+                    }
+                }
+            });
+
+
+
+        </script>
+
+
+
+
+
+
+
+        <!--헤더 스크롤 이벤트 흰 배경 / 사라지기 -->
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                var header = document.querySelector('.m-header');
+                var searchIcon = document.querySelector('.search img');
+                var menuTxt = document.querySelector('.m-menu-txt');
+                var menuBtnDivs = document.querySelectorAll('.m-menu-btn div');
+                var contactLink = document.querySelector('.contact');
+                var scrollThreshold = 50; // 변경된 스크롤 임계값
+
+
+
+            });
+        </script>
+
+
+        <script>// 헤더 모바일메뉴닫기
+            function 모바일메뉴닫기() {
+
+                document.querySelector('.m-menu-btn').classList.remove('active');
+                document.querySelector('.mobile-mask').style.height = '';
+                document.querySelector('.m-menu-list').classList.remove('active');
+
+                document.documentElement.classList.remove('m-menu-scroll');
+            }
+
+        </script>
+
+        <script>
+
+            // 서치메뉴닫기
+            function 서치메뉴닫기() {
+
+                document.querySelector('.m-search-on').classList.remove('active');
+                document.querySelector('.mobile-mask').style.height = '';
+                document.querySelector('.m-menu-btn').classList.remove('active');
+                document.querySelector('.m-menu-list').classList.remove('active');
+
+                document.documentElement.classList.remove('m-menu-scroll');
+            }
+        </script>
+
+
+        <!--서치 - 여행지 선택 -->
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const accordionContainers = document.querySelectorAll('.menu-accordion');
+
+                accordionContainers.forEach(accordionContainer => {
+                    const accordionHeaders = accordionContainer.querySelectorAll('.menu-accordion-header');
+                    const subAccordionHeaders = accordionContainer.querySelectorAll('.submenu-accordion-header');
+                    const additionalContents = accordionContainer.querySelectorAll('.additional-content');
+                    const subAccordionMenu1 = accordionContainer.querySelector('.submenu-accordion.sub-accordion-menu-1');
+                    const menuTitle = document.getElementById('menuTitle');
+
+                    function toggleAccordion(item, content, siblings) {
+                        item.classList.toggle('active');
+                        const isOpen = item.classList.contains('active');
+
+                        content.style.maxHeight = isOpen ? content.scrollHeight + 'px' : 0;
+
+                        if (isOpen) {
+                            siblings.forEach(sibling => {
+                                if (sibling !== item) {
+                                    sibling.classList.remove('active');
+                                    sibling.querySelector('.menu-accordion-content').style.maxHeight = 0;
+                                }
+                            });
+                        }
+                    }
+
+                    accordionHeaders.forEach(header => {
+                        header.addEventListener('click', () => {
+                            const accordionItem = header.parentElement;
+                            const accordionContent = accordionItem.querySelector('.menu-accordion-content');
+                            const otherAccordionItems = Array.from(accordionContainer.querySelectorAll('.menu-accordion-item')).filter(item => item !== accordionItem);
+
+                            toggleAccordion(accordionItem, accordionContent, otherAccordionItems);
+
+                            const otherAccordionContainers = Array.from(document.querySelectorAll('.menu-accordion')).filter(container => container !== accordionContainer);
+                            otherAccordionContainers.forEach(container => {
+                                const otherAccordionItems = Array.from(container.querySelectorAll('.menu-accordion-item'));
+                                otherAccordionItems.forEach(item => {
+                                    item.classList.remove('active');
+                                    item.querySelector('.menu-accordion-content').style.maxHeight = 0;
+                                });
+                            });
+
+                            menuTitle.innerText = header.innerText; // 선택한 헤더 텍스트로 menuTitle 업데이트
+                        });
+                    });
+
+                    subAccordionHeaders.forEach(header => {
+                        header.addEventListener('click', () => {
+                            const subAccordionItem = header.parentElement;
+                            const subAccordionContent = subAccordionItem.querySelector('.submenu-accordion-content');
+                            const otherSubAccordionItems = Array.from(accordionContainer.querySelectorAll('.submenu-accordion-item')).filter(item => item !== subAccordionItem);
+
+                            toggleAccordion(subAccordionItem, subAccordionContent, otherSubAccordionItems);
+
+                            menuTitle.innerText = header.innerText; // 선택한 서브메뉴 헤더 텍스트로 menuTitle 업데이트
+                        });
+                    });
+
+                    additionalContents.forEach(additionalContent => {
+                        additionalContent.addEventListener('click', () => {
+                            toggleAccordion(subAccordionMenu1, subAccordionMenu1, []);
+                        });
+                    });
+                });
+            });
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const accordionContainers = document.querySelectorAll('.menu-accordion');
+
+                accordionContainers.forEach(accordionContainer => {
+                    const accordionHeaders = accordionContainer.querySelectorAll('.menu-accordion-header');
+                    const subAccordionHeaders = accordionContainer.querySelectorAll('.submenu-accordion-header');
+                    const menuTitle = document.getElementById('menuTitle');
+
+                    function updateMenuTitle(headerText) {
+                        menuTitle.innerText = headerText;
+                    }
+
+                    accordionHeaders.forEach(header => {
+                        header.addEventListener('click', () => {
+                            const headerText = header.innerText;
+                            updateMenuTitle(headerText);
+                        });
+                    });
+
+                    subAccordionHeaders.forEach(subHeader => {
+                        subHeader.addEventListener('click', () => {
+                            const subHeaderText = subHeader.innerText;
+                            updateMenuTitle(subHeaderText);
+                        });
+                    });
+                });
+            });
+        </script>
+
+        <!-- ~1165 header -->
+
+    </main>
+
+
+    <article class="faq">
+
+        <div class="bd-text faq-txt">
+            <h1 class="b-txt">FaQ</h1>
+        </div>
+
+        <ul class="listtap">
+            <li class="tapsee">전체<span>(1509)</span></li>
+            <li>패캐지여행<span>(3)</span></li>
+            <li>자유여행<span>(4)</span></li>
+            <li>예약/결제<span>(3)</span></li>
+        </ul>
+        <section id="list1">
+            <div>
+                <div class="listq faq-q">
+                    <div>전체</div>
+                    <div>
+                        <p>항공권 예약 문의는 어느 곳에서...</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>항공권은 1544-5252 연결 후, 2번 또는 1544-5353으로 연결 요청드립니다.
+                            1544-5252 연결 후, 1번은 패키지 관련 상담입니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>전체</div>
+                    <div>
+                        <p>국내 패키지 일정표 내 항공 시간이 없네요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>예약과 동시에 가능 여부 체크 진행이 되며 해당되는 좌석으로 실시간으로 항공 가격이 책정되어, 좌석 상황에 따라 항공료는 변동될 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>전체</div>
+                    <div>
+                        <p>지금 해외 패키지 상품 예약이 가능한가요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>현재 코로나로 인하여 각 국가별 입국 가능 조건이 상이하며, 사전 고지 없이 변경될 수 있습니다. 자세한 사항은 당사 홈페이지 내 ‘국가별 입국 규정 안내’를 참고
+                            부탁드립니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>전체</div>
+                    <div>
+                        <p>호텔은 어디로 예약관련...</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>호텔은 예약 상담 불가하며, 실시간 PC 및 모바일을 통해 실시간 예약만 가능합니다.
+                            상품권 사용의 경우 대부분 사용이 제한되고 있으나, 일부 가능 호텔의 경우 전화 문의는 불가하여, 실시간 예약 후 결제 시 상품권 결제 창 활성화될 경우 가능합니다.
+                            불편을 끼쳐드린 점 양해 부탁드립니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>전체</div>
+                    <div>
+                        <p>아시아나 항공 마일리지 결제가...</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>아시아나 항공 이용하는 패키지 상품만 가능하며, 단품(항공, 호텔) 만은 이용 불가합니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>전체</div>
+                    <div>
+                        <p>항공 / 호텔 전화 연결이 어렵다는 문의...</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>현재 근무시간 변경 및 내부 사정으로 인한 전화 연결이 상당히 어렵습니다.
+                            최대한 게시판을 이용해 주시길 부탁드립니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="list2">
+            <div>
+                <div class="listq">
+                    <div>패캐지여행</div>
+                    <div>
+                        <p>해외여행자 보험이란?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>여행도중에 우연히 발생하게 되는 각종 사고 및 질병, 조난 시 구조비용, 휴대품의 도난 손해 등의 보상을 목적으로 하는 보험.
+
+                            해외여행자보험의 실손의료비는 여러 보험사에 중복 계약을 했더라도 중복보상이 안되고 비례보상으로 처리된다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>패캐지여행</div>
+                    <div>
+                        <p>해외여행자 보험이란?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>여행도중에 우연히 발생하게 되는 각종 사고 및 질병, 조난 시 구조비용, 휴대품의 도난 손해 등의 보상을 목적으로 하는 보험.
+
+                            해외여행자보험의 실손의료비는 여러 보험사에 중복 계약을 했더라도 중복보상이 안되고 비례보상으로 처리된다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>패캐지여행</div>
+                    <div>
+                        <p>해외여행자 보험이란?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>여행도중에 우연히 발생하게 되는 각종 사고 및 질병, 조난 시 구조비용, 휴대품의 도난 손해 등의 보상을 목적으로 하는 보험.
+
+                            해외여행자보험의 실손의료비는 여러 보험사에 중복 계약을 했더라도 중복보상이 안되고 비례보상으로 처리된다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="list3">
+            <div>
+                <div class="listq">
+                    <div>자유여행</div>
+                    <div>
+                        <p>입장권/패스 성인 요금만 보입니다.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>소아권을 판매하지 않거나, 패스/입장권 자체적으로 소아권이 없을 경우 성인 요금만 보여집니다. 상품 상세 내역의 연령구분을 참고하시기 바랍니다.
+                            소아권 요금이 없는 경우 성인권을 사용하시거나 현지에서 사용가능한 대체편으로 진행하시기 바랍니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>자유여행</div>
+                    <div>
+                        <p>입장권/패스를 당장 받고 싶습니다. 구매 후 바로 수령이 가능할까요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>예약 후 바로 수령은 불가합니다. 실물패스, 실물바우처의 경우 택배수령으로 5일소요됩니다.
+                            출발일이 얼마 남지 않은 고객님은 직접 수령을 권해드리며, 모두투어 본사수령은 결제일로부터 익일 오후3시 이후/인천공항 수령은 결제일로부터 +2일이후 수령
+                            가능합니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>자유여행</div>
+                    <div>
+                        <p>판매자가 모두투어가 아닌 상품은 무엇일까요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>모두투어 현지투어/입장권/패스는 오픈마켓을 지향하고 있습니다. 모두투어에서 엄선한 전문업체에서 상품관리 및 예약관리, 현지 행사를 진행하고 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="list4">
+            <div>
+                <div class="listq">
+                    <div>예약/결제</div>
+                    <div>
+                        <p>여행상품 예약은 어떻게 하나요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>여행상품의 예약은 온라인상에서, 전화, 또는 e-mail을 통해 문의 및 예약하실수 있으며, 365일 24시간 언제든지 예약하실 수 있습니다. (단, 전화상담 가능시간
+                            평일 09:00~18:00 / 토,일요일 및 공휴일 휴무)
+
+                            예약후 영업일기준 24시간내에 고객께 전화나 메일로 여행 출발일로부터 종료일까지 예약의 전반적인 사항을 체크하여 처리해 드립니다</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>예약/결제</div>
+                    <div>
+                        <p>온라인상에서 실시간으로 예약할 수 있나요?</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>예. 가능합니다.
+                            온라인상에서의 예약은 금일을 기준으로 10일 이후의 날짜의 예약일경우 좌석이 여유가 있으면 가능합니다.
+                            단, 마감이 안된 단체라도 10일이내의 예약인경우는 대기예약으로 들어가며, 추후 좌석상황이나 최소출발인원여부에 따라 출발하지 못하실 수도 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="listq">
+                    <div>예약/결제</div>
+                    <div>
+                        <p>예약조회를 하고싶습니다.</p>
+                    </div>
+                </div>
+                <div>
+                    <div>답변</div>
+                    <div>
+                        <p>예약번호와 함께 주민등록번호 또는 여권번호를 기입하면 고객님의 예약상황을 확인하실 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="faq-page">
+            <p class="faq-checkpage">1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+            <p>5</p>
+        </div>
+
+    </article>
+
+    <footer>
+
+        <div class="footer-mainIcon"><img src="image/header-mainlogo.png" alt="모두투어아이콘"></div>
+    
+        <div>
+    
+            <div class="footer-02">
+                <p class="green">회사소개</p>
+                <p>개인정보처리방침</p>
+                <p>여행약관</p>
+                <p>이용약관</p>
+                <p>대리점개설문의</p>
+            </div>
+    
+            <div class="footer-03">
+                <p>Address. 서울특별시 중구 을지로 16 백남빌딩 5층</p>
+                <p>Tel 1544-5252</p>
+                <p>Fax 02-2021-7800</p>
+                <p>사업자등록번호 202-81-45295</p>
+                <p>통신판매업신고번호 중구 제03500호</p>
+            </div>
+    
+            <div class="footer-04">
+                <p>COPYRIGHT 1989-2023 MODETOUR. ALL RIGHTS RESERVED.</p>
+            </div>
+    
+        </div>
+    
+        <div class="footer-subIcon">
+            <div><img src="https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/icon_chn.svg"></div>
+            <div><img src="https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/icon_insta.svg"></div>
+            <div><img src="https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/icon_facebook.svg">
+            </div>
+            <div><img src="https://www.goldonehotel.com/theme/responsive_goldonehotel/include/img/icon_youtube.svg">
+            </div>
+        </div>
+    
+    </footer>
+    
+
+
+
+</body>
+
+<script>
+    // document.getElementById(' ').classList.toggle(' ');
+    //  document.getElementById(" ").style.display = " ";
+
+    // var pCont = document.querySelectorAll(".page p")
+
+
+
+    // var pCont = document.querySelectorAll(".page p")
+
+    // pCont.forEach((p) => {
+    //   p.onclick = () => {
+    //     pCont.forEach((p) => {
+    //       p.classList.remove("checkpage")
+    //     })
+    //     p.classList.add("checkpage")
+    //   }
+    // })
+
+
+    // News 페이지 넘버
+    window.addEventListener("load", function () {
+        const tagList = document.querySelectorAll(".page > p");
+        for (let i = 0; i < tagList.length; i++) {
+            tagList[i].addEventListener("click", function () {
+                clearPage();
+                this.classList.add("checkpage");
+            });
+        }
+
+        function clearPage() {
+
+            for (let i = 0; i < tagList.length; i++) {
+                tagList[i].classList.remove("checkpage");
+            }
+        }
+    });
+
+
+    // fqa 리스트 탭
+    window.addEventListener("load", function () {
+        const tapList = document.querySelectorAll(".listtap > li");
+        for (let i = 0; i < tapList.length; i++) {
+            tapList[i].addEventListener("click", function () {
+                cleartap();
+                this.classList.add("tapsee");
+                if (i == 0) {
+                    document.getElementById("list1").style.display = "block";
+                    document.getElementById("list2").style.display = "none";
+                    document.getElementById("list3").style.display = "none";
+                    document.getElementById("list4").style.display = "none";
+                } else if (i == 1) {
+                    document.getElementById("list1").style.display = "none";
+                    document.getElementById("list2").style.display = "block";
+                    document.getElementById("list3").style.display = "none";
+                    document.getElementById("list4").style.display = "none";
+                } else if (i == 2) {
+                    document.getElementById("list1").style.display = "none";
+                    document.getElementById("list2").style.display = "none";
+                    document.getElementById("list3").style.display = "block";
+                    document.getElementById("list4").style.display = "none";
+                } else if (i == 3) {
+                    document.getElementById("list1").style.display = "none";
+                    document.getElementById("list2").style.display = "none";
+                    document.getElementById("list3").style.display = "none";
+                    document.getElementById("list4").style.display = "block";
+                }
+            });
+        }
+
+        function cleartap() {
+
+            for (let i = 0; i < tapList.length; i++) {
+                tapList[i].classList.remove("tapsee");
+            }
+        }
+    });
+
+
+    // fqa 리스트 아코디언
+
+    window.addEventListener("load", function () {
+        const List = document.querySelectorAll(".listq");
+        for (let i = 0; i < List.length; i++) {
+            List[i].addEventListener("click", function () {
+                clearlist();
+                var panel = this.nextElementSibling;
+                panel.classList.add("listsee");
+            });
+        }
+
+        function clearlist() {
+            for (let i = 0; i < List.length; i++) {
+                var panel = List[i].nextElementSibling;
+                panel.classList.remove("listsee");
+            }
+        }
+    });
+
+
+    // faq 페이지 넘버
+    window.addEventListener("load", function () {
+        const tagList = document.querySelectorAll(".faq-page > p");
+        for (let i = 0; i < tagList.length; i++) {
+            tagList[i].addEventListener("click", function () {
+                clearPage();
+                this.classList.add("faq-checkpage");
+            });
+        }
+
+        function clearPage() {
+
+            for (let i = 0; i < tagList.length; i++) {
+                tagList[i].classList.remove("faq-checkpage");
+            }
+        }
+    });
+
+
+
+</script>
+
+
+</html>
